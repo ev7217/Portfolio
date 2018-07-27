@@ -1,0 +1,131 @@
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.5')
+		title Mandy Jian
+		link(rel="icon" href="images/favicon.png" type="image/png" sizes="32x32")
+		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
+		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700") 
+		link(rel="stylesheet", href="css/reset.css")
+		link(rel="stylesheet", href="css/plugins/fancybox/jquery.fancybox.min.css")
+
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/orther_works.css")
+
+
+	body
+		header.navdiv
+			.content
+				.logo
+					.icon
+						img(src="images/logo.svg", alt="Logo")
+					.text
+						h5.top_hello.mobile_hidden Hello, I’m
+						h1.top_name.mobile_hidden Mandy.
+						h1.top_name.desktop_hidden Mandy
+
+				.navbar
+					.nav
+						ul
+							li.mobile_hidden
+								a(href="index.html") UI DESIGN
+							li.nowli
+								.nowpage OTHER WORKS
+							li.mobile_hidden 
+								a(href="about.html") ABOUT
+							li.mobile_hidden 
+								a(href="") RESUME
+
+			.mobile_nav
+				input#open_menu(type="checkbox")
+				.menu
+					.hunburger_menu
+						ul
+							li.line1
+							li.line2
+							li.line3
+					.mobile_menu
+						ul
+							li 
+								a(href="index.html")
+									h6 UI DESIGN
+							li 
+								a(href="orther_works.html")
+									h6 OTHER WORKS
+							li 
+								a(href="about.html")
+									h6 ABOUT
+							li
+								a(href="resume.html")
+									h6 RESUME
+
+		.works
+			section.works_3d
+				.content
+					.top_work
+						.iframe_3d
+							#3d
+								iframe(width="100%" height="480px" src="https://sketchfab.com/models/712c80c56d1444f8ad1626b68bf21dab/embed?camera=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true")
+								
+						a(href="").info
+							h2.title 遊戲人物設計
+							hr.topic
+							.title_p 
+								p About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about.   11% of all adult internet users visit dating websites and spend their time in chatrooms. Some of the c
+								.tag 3D MODEL /  2016
+
+					.works_2d
+						.row
+							a.work_2d.width(href="images/Group.jpg" data-fancybox="images" data-caption="Caption" style="background-image: url('images/Group.jpg')")
+
+							a.work_2d.narrow(href="https://i.imgur.com/jyAcrzU.png" data-fancybox="images" data-caption="Caption" style="background-image: url('images/Group.jpg')")
+
+							a.work_2d.narrow(href="https://i.imgur.com/jyAcrzU.png" data-fancybox="images" data-caption="Caption" style="background-image: url('https://i.imgur.com/byXpzJi.png')")
+
+
+							a.work_2d.narrow(href="https://i.imgur.com/jyAcrzU.png" data-fancybox="images" data-caption="Caption" style="background-image: url('images/Group.jpg')")
+
+							a.work_2d.width(href="images/Group.jpg" data-fancybox="images" data-caption="Caption" style="background-image: url('images/Group.jpg')")
+
+						.row
+							a.work_2d.width(href="images/Group.jpg" data-fancybox="images" data-caption="Caption" style="background-image: url('images/Group.jpg')")
+
+							a.work_2d.width(href="images/Group.jpg" data-fancybox="images" data-caption="Caption" style="background-image: url('images/Group.jpg')")
+
+							
+			section.works_craft
+				.content
+					a(href="" ).top_work
+						.info
+							.en_and_ch
+								h2.title_en Cat't Cradle 
+								h5 翻花椅
+							hr.topic
+							.title_p 
+								p About 64% of all on-line teens say that do things online that they wouldn’t want their parents to know about.
+							.tag APP /  2017
+						.photo
+							img(src="https://i.imgur.com/p0soVzF.jpg", alt="")
+		footer.footer
+				a.link(href="index.html")
+					.text
+						h2.title_en UI DESIGN WORKS
+						hr.topic
+				.contact
+					.content
+						.mail
+							.icon
+								img(src="images/footer_logo.svg", alt="")
+							.text
+								h5 Let’s talk to me
+								p ev217@gmail.com
+							
+						.top#go_to_top
+							button
+								img(src="images/top.svg", alt="" title="Go to top" )
+
+		script(src='js/plugins/jquery/jquery-3.3.1.min.js')
+		
+		script(src='js/index.js')
+		
+		script(src='js/plugins/fancybox/jquery.fancybox.min.js')

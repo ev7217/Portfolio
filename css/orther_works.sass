@@ -1,0 +1,125 @@
+// // Color
+$black: #000000
+$black_90: rgba(0, 0, 0, 0.9)
+$black_80: rgba(0, 0, 0, 0.8)
+$black_70: rgba(0, 0, 0, 0.7)
+$black_60: rgba(0, 0, 0, 0.6)
+$black_40: rgba(0, 0, 0, 0.4)
+$black_30: rgba(0, 0, 0, 0.3)
+$black_20: rgba(0, 0, 0, 0.2)
+$black_10: rgba(0, 0, 0, 0.1)
+$gray_white: #f8f8f8
+$light_gray: #f2f2f2
+$light_blue: rgba(81, 242, 224, 0.9)
+$orange: rgba(255, 91, 44, 0.8)
+$white: #ffffff
+$white_two: #fcfcfc
+$green: #2ba39d
+
+// rwd
+@media screen and(min-width: 1024px)
+	.mobile_nav
+		display: none
+
+// rwd
+
+body
+	padding-top: 55px
+	
+.works
+	width: 100%
+	.iframe_3d
+		width: 700px
+		@media screen and(max-width: 1024px)
+			width: 100%
+
+section.works_3d
+	padding: 20px 0px 20px 0px
+	.iframe_3d
+		background-color: #eee
+		#3d
+			animation: fade_in 1s 2s 1 both
+
+	@media screen and(max-width: 1024px)
+		padding: 0px
+
+			
+.works_2d
+	margin: 50px -5px
+	animation: text_up 1s 1.6s 1 both
+	font-size: 0
+
+	.row
+		padding: .5vw
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+
+	a.work_2d
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #eee
+		flex: auto
+		border: 1px solid $black_10
+		cursor: pointer
+		transition: 0.3s
+		height: 60%
+		max-height: 240px
+		width: 180px; 
+		margin: .3vw; 
+		opacity: 0.9
+
+		&:hover
+			box-shadow: 0px 3px 10px 0px $black_20
+			opacity: 1
+		img
+			width: 100%; 
+			height: auto; 
+
+		&:focus 
+			box-shadow: 0px 0px 5px 0px $black_20
+			opacity: 1
+
+		// @media screen and(max-width: 1024px)
+		//   width: 100% 
+		//   height: auto
+		//   margin: 5px 0px
+			// img
+			//   width: 100%
+			//   height: auto
+
+		
+
+section.works_craft
+	padding: 100px 0px
+		
+	h2
+		vertical-align: bottom
+		display: inline-block
+		margin-right: 6px
+	h5
+		bottom: 7px
+		vertical-align: bottom
+		display: inline-block
+
+	.photo
+		width: 600px
+		animation: text_up 1s 0.5s 1 both
+	hr
+		width: 72px
+
+	@media screen and(max-width: 1024px)
+		padding: 50px 0px
+		.photo
+			width: 100%
+			height: 400px
+			order: 1
+		.info
+			order: 2
+		
+.works_3d,.works_craft,works_2d
+	@media screen and(max-width: 1024px)
+		img
+			width: 100%
+
