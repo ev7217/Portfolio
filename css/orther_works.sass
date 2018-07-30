@@ -43,14 +43,16 @@ section.works_3d
 	@media screen and(max-width: 1024px)
 		padding: 0px
 
+	.info
+		width: 35%
+		@media screen and(max-width: 1024px)
+			width: 100%
 			
 .works_2d
-	margin: 50px -5px
+	margin: 50px -.3vw
 	animation: text_up 1s 1.6s 1 both
 	font-size: 0
-
 	.row
-		padding: .5vw
 		display: flex
 		flex-direction: row
 		flex-wrap: wrap
@@ -66,16 +68,16 @@ section.works_3d
 		transition: 0.3s
 		height: 60%
 		max-height: 240px
-		width: 180px; 
-		margin: .3vw; 
+		width: 180px
+		margin: .3vw
 		opacity: 0.9
 
 		&:hover
 			box-shadow: 0px 3px 10px 0px $black_20
 			opacity: 1
 		img
-			width: 100%; 
-			height: auto; 
+			width: 100%
+			height: auto
 
 		&:focus 
 			box-shadow: 0px 0px 5px 0px $black_20

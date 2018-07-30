@@ -23,14 +23,18 @@ section.works_3d {
   @media screen and (max-width: 1024px) {
     section.works_3d {
       padding: 0px; } }
+  section.works_3d .info {
+    width: 35%; }
+    @media screen and (max-width: 1024px) {
+      section.works_3d .info {
+        width: 100%; } }
 
 .works_2d {
-  margin: 50px -5px;
+  margin: 50px -.3vw;
   -webkit-animation: text_up 1s 1.6s 1 both;
   animation: text_up 1s 1.6s 1 both;
   font-size: 0; }
   .works_2d .row {
-    padding: .5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

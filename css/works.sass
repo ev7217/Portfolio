@@ -19,35 +19,40 @@ $green: #57d0cc
 $color_bg: #333333
 
 
+.content_1440
+  padding: 50px 10px
+
+.content_1024
+  padding: 50px 10px
+
+.content_800
+  padding: 50px 10px
+
+
 .banner
   background-size: cover
   background-position: center center
-  background-attachment: fixed
   background-repeat: no-repeat
   background-color: #eee
   width: 100%
-  height: 600px
+  padding: 200px 20px 50px 20px 
   text-align: center
   position: relative
   animation: fade_in 2s 1 both
-  &::after
-    content: ""
-    background-color: $black_10
-    width: 100%
-    height: 100%
-    position: absolute
-    left: 50%
-    top: 50%
-    transform: translate(-50%,-50%)   
-  
+  z-index: 30
+  display: flex
+  justify-content: space-between
+  .content_1440
+    text-align: left
+    z-index: 20
   .article_title
+    display: inline-block
     text-align: left
     word-break: break-word
     animation: text_up 1s 1 both
-    max-width: 500px
-    position: absolute
-    bottom: 20%
-    z-index: 20
+    width: 40%
+    h1
+      line-height: 10px
     hr
       border: 3px solid $green
       border-radius: 0
@@ -60,24 +65,31 @@ $color_bg: #333333
       font-weight: normal
 
     .tag
-      margin-bottom: 10px
-      font-size: 13px
+      // font-weight: bold
+      margin-bottom: 20px
+      font-size: 16px
       letter-spacing: 1px
       color: $black_60
-  
+
+  .banner_img
+    max-width: 800px
+    display: inline-block
+    position: absolute
+    bottom: -100px
+    animation: text_up 1s 0.2s 1 both
+    img
+      display: inline-block
+      width: 100%
+
+  @media screen and(max-width: 1024px)
+    padding: 10px 10px 10px 10px
+    .article_title
+      width: 100%
+    .banner_img
+      position: relative
+      width: 100%
+      bottom: -50px
     
-
-.content_1024
-  max-width: 1240px
-  width: 100%
-  margin: auto
-  padding: 50px 10px
-
-.content_800
-  width: 100%
-  max-width: 800px
-  margin: auto
-  padding: 50px 10px
 
 
 .color_bg
@@ -85,17 +97,19 @@ $color_bg: #333333
   animation: fade_in 0.5s 1  both
   h1,h2,h3,h4,h5,p
     font-weight: 300
-    animation: text_up 1s 0.3s 1 both
+    animation: text_up 1s 0.5s 1 both
     color: $white_text
 
 .article
   position: relative
   padding: 30px 0px 130px 0px
-  animation: text_up 1s 0.5s 1 backwards
+  animation: text_up 1s 0.7s 1 backwards
+  text-align: center
+  p
+    text-align: left
 
   img
-    margin: 50px 0px
-    max-width: 100%
+    margin: 50px auto
     @media screen and(max-width: 1024px)
       width: 100%
   hr

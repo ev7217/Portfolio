@@ -109,10 +109,29 @@ button {
   -o-transition: 0.5s;
   transition: 0.5s; }
 
-.content {
-  width: 100%;
-  max-width: 1024px;
-  margin: auto; }
+.content_1440 {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0px 10px; }
+  @media screen and (max-width: 1440px) {
+    .content_1440 {
+      width: 100%; } }
+
+.content_1024, .content {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 0px 10px; }
+  @media screen and (max-width: 1024px) {
+    .content_1024, .content {
+      width: 100%; } }
+
+.content_800 {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0px 10px; }
+  @media screen and (max-width: 800px) {
+    .content_800 {
+      width: 100%; } }
 
 .logo {
   width: 300px;
@@ -372,10 +391,9 @@ button {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #eee;
-    position: relative;
     overflow: hidden; }
   .works .info {
-    width: 320px;
+    width: 100%;
     padding: 50px 20px; }
     .works .info .title {
       margin-bottom: 8px;
@@ -437,10 +455,13 @@ button {
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
-    @media screen and (max-width: 1024px) {
-      .top_work .photo {
-        width: 100%; } }
-    .top_work .photo::after {
+  @media screen and (max-width: 1024px) {
+    .top_work .photo {
+      width: 100%; }
+      .top_work .photo img {
+        width: 100%;
+        height: auto; }
+    .top_work::after {
       position: absolute;
       content: "";
       width: 100%;
@@ -454,15 +475,16 @@ button {
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-    .top_work .photo:hover {
+    .top_work:hover {
       -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
       box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2); }
-      .top_work .photo:hover::after {
-        background: rgba(255, 255, 255, 0.1); }
+      .top_work:hover::after {
+        background: rgba(255, 255, 255, 0.1); } }
   .top_work .info {
+    padding: 40px;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
-    width: 320px;
+    width: 40%;
     display: inline-block; }
   @media screen and (max-width: 1024px) {
     .top_work {
