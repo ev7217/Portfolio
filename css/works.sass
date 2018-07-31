@@ -42,6 +42,8 @@ $color_bg: #333333
   z-index: 30
   display: flex
   justify-content: space-between
+  p
+    font-size: 16px
   .content_1440
     text-align: left
     z-index: 20
@@ -99,28 +101,36 @@ $color_bg: #333333
     font-weight: 300
     animation: text_up 1s 0.5s 1 both
     color: $white_text
+  p
+    font-weight: Lightest
+    font-size: 16px
 
 .article
   position: relative
   padding: 30px 0px 130px 0px
   animation: text_up 1s 0.7s 1 backwards
   text-align: center
-  p
+  p,h1,h2,h3,h4,h5
     text-align: left
+    font-weight: normal
+  h1,h2,h3,h4,h5
+    line-height: 300%
+
+  p
+    font-size: 16px
+    line-height: 24px
+    @media screen and(max-width: 1024px)
+      font-size: 14px
 
   img
-    margin: 50px auto
+    margin: 0px auto
+    max-width: 100%
     @media screen and(max-width: 1024px)
       width: 100%
   hr
   	margin-top: 100px
 
 
-
-ul
-  list-style: none
-  display: flex
-  justify-content: space-between
 
   @media screen and(max-width: 1024px)
     flex-direction: column

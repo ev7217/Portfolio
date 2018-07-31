@@ -25,6 +25,8 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .banner p {
+    font-size: 16px; }
   .banner .content_1440 {
     text-align: left;
     z-index: 20; }
@@ -80,6 +82,9 @@
     -webkit-animation: text_up 1s 0.5s 1 both;
     animation: text_up 1s 0.5s 1 both;
     color: rgba(255, 255, 255, 0.95); }
+  .color_bg p {
+    font-weight: Lightest;
+    font-size: 16px; }
 
 .article {
   position: relative;
@@ -87,26 +92,27 @@
   -webkit-animation: text_up 1s 0.7s 1 backwards;
   animation: text_up 1s 0.7s 1 backwards;
   text-align: center; }
+  .article p, .article h1, .article h2, .article h3, .article h4, .article h5 {
+    text-align: left;
+    font-weight: normal; }
+  .article h1, .article h2, .article h3, .article h4, .article h5 {
+    line-height: 300%; }
   .article p {
-    text-align: left; }
+    font-size: 16px;
+    line-height: 24px; }
+    @media screen and (max-width: 1024px) {
+      .article p {
+        font-size: 14px; } }
   .article img {
-    margin: 50px auto; }
+    margin: 0px auto;
+    max-width: 100%; }
     @media screen and (max-width: 1024px) {
       .article img {
         width: 100%; } }
   .article hr {
     margin-top: 100px; }
-
-ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
   @media screen and (max-width: 1024px) {
-    ul {
+    .article {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
