@@ -73,3 +73,8 @@ section.works_logo {
         height: 260px; } }
   section.works_logo hr {
     width: 120px; }
+
+.footer a.link::before {
+  background-image: url(../images/uiDesign_footer_hover.jpg); }
+.footer a.link::after {
+  background-image: url(../images/uiDesign_footer.jpg); }
