@@ -16,7 +16,15 @@ $white: #ffffff
 $white_two: #fcfcfc
 $white_text: rgba(255, 255, 255, 0.95)
 $green: #57d0cc
-$color_bg: #333333
+$color_bg: #333
+$work1_color: #038065
+$work2_color: #333
+$work3_color: #333
+$work4_color: #333
+$work5_color: #333
+$work6_color: #333
+
+
 
 
 .content_1440
@@ -34,12 +42,11 @@ $color_bg: #333333
   background-position: center center
   background-repeat: no-repeat
   background-color: #eee
-  width: 100%
   padding: 200px 20px 50px 20px 
   text-align: center
   position: relative
   animation: fade_in 2s 1 both
-  z-index: 30
+  z-index: 40
   display: flex
   justify-content: space-between
   p
@@ -80,8 +87,8 @@ $color_bg: #333333
     bottom: -100px
     animation: text_up 1s 0.2s 1 both
     img
-      display: inline-block
       width: 100%
+      display: inline-block
 
   @media screen and(max-width: 1024px)
     padding: 10px 10px 10px 10px
@@ -104,6 +111,23 @@ $color_bg: #333333
   p
     font-weight: Lightest
     font-size: 16px
+
+
+.color_bg_work1
+  background-color: $work1_color
+.color_bg_work2
+  background-color: $work2_color
+.color_bg_work3
+  background-color: $work3_color
+.color_bg_work4
+  background-color: $work4_color
+.color_bg_work5
+  background-color: $work5_color
+.color_bg_work6
+  background-color: $work6_color
+
+
+
 
 .article
   position: relative

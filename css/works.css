@@ -12,13 +12,12 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #eee;
-  width: 100%;
   padding: 200px 20px 50px 20px;
   text-align: center;
   position: relative;
   -webkit-animation: fade_in 2s 1 both;
   animation: fade_in 2s 1 both;
-  z-index: 30;
+  z-index: 40;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,8 +60,8 @@
     -webkit-animation: text_up 1s 0.2s 1 both;
     animation: text_up 1s 0.2s 1 both; }
     .banner .banner_img img {
-      display: inline-block;
-      width: 100%; }
+      width: 100%;
+      display: inline-block; }
   @media screen and (max-width: 1024px) {
     .banner {
       padding: 10px 10px 10px 10px; }
@@ -74,7 +73,7 @@
         bottom: -50px; } }
 
 .color_bg {
-  background-color: #333333;
+  background-color: #333;
   -webkit-animation: fade_in 0.5s 1  both;
   animation: fade_in 0.5s 1  both; }
   .color_bg h1, .color_bg h2, .color_bg h3, .color_bg h4, .color_bg h5, .color_bg p {
@@ -85,6 +84,24 @@
   .color_bg p {
     font-weight: Lightest;
     font-size: 16px; }
+
+.color_bg_work1 {
+  background-color: #038065; }
+
+.color_bg_work2 {
+  background-color: #333; }
+
+.color_bg_work3 {
+  background-color: #333; }
+
+.color_bg_work4 {
+  background-color: #333; }
+
+.color_bg_work5 {
+  background-color: #333; }
+
+.color_bg_work6 {
+  background-color: #333; }
 
 .article {
   position: relative;
