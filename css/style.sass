@@ -71,7 +71,14 @@ h5
 .title_en
 	font-size: 36px
 	letter-spacing: 1.5px
+
+.white
+	color: white
+	font-weight: 300
+
 	
+.text_shadow
+	text-shadow: $black_60 0.1em 0.1em 1em
 // fonts
 
 hr
@@ -181,13 +188,21 @@ section
 .row_img
 	display: flex
 	flex-direction: row
-	
 	margin: 20px -20px
 	@media screen and(max-width: 800px)
 		flex-direction: column
 
+.col_1_2
+	padding: 5px 20px
+	width: 50%
+	@media screen and(max-width: 800px)
+		width: 100%
+
 .col_1_3
+	padding: 5px 20px
 	width: 33.3%
+	@media screen and(max-width: 800px)
+		width: 100%
 
 
 
@@ -466,7 +481,7 @@ section
 			animation: text_up 1s 1.1s 1 both 
 
 
-.top_work,.sec_work,.photo
+a.top_work,.sec_work,.photo
 	.info
 		*
 			transition: 0.3s
@@ -507,10 +522,7 @@ section
 			top: 50%
 			transform: translate(-50%,-50%)
 			transition: 0.5s
-		&:hover
-			box-shadow: 0px 5px 20px 0px $black_30
-			&::after
-				background: rgba(255,255,255,0)
+
 
 	@media screen and(max-width: 1024px)
 		.photo
@@ -533,7 +545,12 @@ section
 			margin: 0px 20px 12px 20px
 			width: 100%
 	
-				
+a.top_work
+	.photo
+		&:hover
+			box-shadow: 0px 5px 20px 0px $black_30
+			&::after
+				background: rgba(255,255,255,0)
 		
 .footer
 	a.link
