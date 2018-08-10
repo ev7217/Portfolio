@@ -52,6 +52,9 @@ h5 {
 .text_shadow {
   text-shadow: rgba(0, 0, 0, 0.6) 0.1em 0.1em 1em; }
 
+.text_center {
+  text-align: center !important; }
+
 hr {
   border-color: rgba(0, 0, 0, 0.1); }
 
@@ -177,6 +180,11 @@ button {
     .row ul li {
       padding: 5px 20px;
       max-width: 500px; }
+
+.flex_Y_center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .row_img {
   display: -webkit-box;

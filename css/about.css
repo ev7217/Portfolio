@@ -1,17 +1,14 @@
 .banner {
-  background: url(https://i.imgur.com/p0soVzF.jpg);
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-color: #eee;
-  mix-blend-mode: luminosity;
+  background-color: #eeeeee;
   position: relative;
   opacity: 0.5;
   width: 100%;
   height: 260px;
   text-align: center;
-  -webkit-animation: fade_in 3s 1;
-  animation: fade_in 3s 1; }
+  animation: fade_in 3s 1 both; }
   @media screen and (max-width: 1024px) {
     .banner {
       height: 200px; } }
@@ -23,23 +20,16 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 
 .me {
   width: 80%;
   position: absolute;
-  -webkit-transform: translateY(-85%);
-  -ms-transform: translateY(-85%);
   transform: translateY(-85%);
   margin: 0px 100px;
-  -webkit-animation: text_up_me 1s 1 both;
   animation: text_up_me 1s 1 both; }
   @media screen and (max-width: 1024px) {
     .me {
-      -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
       transform: translateY(-100%);
       margin: 50px 0px;
       width: 100%;
@@ -51,7 +41,6 @@
     width: 160px;
     height: 160px;
     border-radius: 100%;
-    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); }
     @media screen and (max-width: 1024px) {
       .me .pic {
@@ -64,7 +53,7 @@
     color: rgba(81, 242, 224, 0.9);
     font-size: 48px;
     font-weight: normal;
-    font-family: 'PTSans-Caption';
+    font-family: "PTSans-Caption";
     margin: 0px 25px 0px 25px;
     top: 50px;
     text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
@@ -72,7 +61,7 @@
       .me h1 {
         font-size: 36px; } }
   .me h2 {
-    color: #ffffff;
+    color: white;
     font-size: 20px;
     font-weight: normal;
     opacity: 0.8;
@@ -89,47 +78,24 @@
         text-align: center;
         margin-left: 0px; } }
 
-@-webkit-keyframes text_up_me {
-  0% {
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    opacity: 0; }
-  100% {
-    -webkit-transform: translateY(-85%);
-    transform: translateY(-85%);
-    opacity: 1; } }
-
 @keyframes text_up_me {
   0% {
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     opacity: 0; }
+
   100% {
-    -webkit-transform: translateY(-85%);
     transform: translateY(-85%);
     opacity: 1; } }
-
 .resume {
   padding: 60px 0px 100px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
   .resume .row {
     padding: 20px 0px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-animation: text_up 1s 0.5s 1 both;
     animation: text_up 1s 0.5s 1 both; }
     @media screen and (max-width: 1024px) {
       .resume .row {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column; }
         .resume .row .type {
           margin: 25px 20px;
@@ -137,16 +103,12 @@
           border: none;
           border-bottom: 2px solid rgba(0, 0, 0, 0.1); } }
   .resume #row_1 {
-    -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s; }
   .resume #row_2 {
-    -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s; }
   .resume #row_3 {
-    -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s; }
   .resume #row_4 {
-    -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s; }
   .resume .type {
     color: rgba(0, 0, 0, 0.6);
@@ -184,8 +146,6 @@
 .back {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   padding: 4px 0px;
   margin: 45px auto 100px auto;
@@ -195,8 +155,6 @@
   letter-spacing: 2px;
   border: none;
   border-bottom: 3px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s; }
   .back:hover {
     color: rgba(0, 0, 0, 0.6);
@@ -204,5 +162,4 @@
   .back:active {
     color: rgba(255, 91, 44, 0.8);
     border-bottom: 3px solid rgba(255, 91, 44, 0.8);
-    -webkit-box-shadow: none;
     box-shadow: none; }
