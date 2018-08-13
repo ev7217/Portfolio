@@ -2,7 +2,7 @@ html
 	head
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.5')
-		title 集思創新平台-Mandy Jian
+		title 萄萄居-Mandy Jian
 		link(rel="icon" href="../images/favicon.png" type="image/png" sizes="32x32")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700") 
@@ -40,79 +40,56 @@ html
 
 			
 			
-		header.banner(style="background-image: url(../images/icc_banner.jpg)")
+		header.banner(style="background-image: url(../images/total_banner.jpg)")
 			.content_1440
 				.article_title
-					H1.title_en.white.text_shadow 集思創新平台
+					H1.title_en.white.text_shadow 萄萄居青年旅社
 					.tag
-						p.white.text_shadow web, visual design, UI, UX
-					p.white.text_shadow 以主題週報為中心的社論文章網站，我參與和案主溝通需求、設計網站介面、規劃使用流程、和工程師溝通調整介面和後台流程優化。
-					a(href="http://taiwan2030.org.tw/index.php" target="_blank").web_link 前往網站
+						p.white.text_shadow web, visual design, UI
+					p.white.text_shadow 萄萄居是位在澳洲的打工度假青年旅社，網站主要功能除了介紹房型和旅社還有介紹當地的工作機會。
+					a(href="http://totalbackpackers.mynet.com.tw/" target="_blank").web_link 測試網站
 				
 
-		.color_bg.color_bg_work2
+		.color_bg.color_bg_work3
 			.content_1440
-				.row
-					ul
-						li
-							h3 和案主面對面對談所整理主要功能需求：
-							br
-							p 1. 有不同主題週報和文章分類並將最新週報顯示在首頁
-							p 2. 主題各有責任編輯，給主編審核通過後才會更新在前臺
-							p 3. RWD響應式設計，要在行動裝置上易於閱讀
-							p 4. 週報審核通過要同時發送電子報給訂閱者
+
+					h3 介面風格設計
+					br
+					p 以淡雅的深咖啡色配上優美的澳洲風景圖片，營造度假的休閒氛圍。
+
+
 
 		main.article
 			.content_1024
-				h3 週報架構規劃
-				img(src="../images/tw568_logoDesign.jpg",  data-action="zoom" title='週報架構圖')
-				.img_tag 週報架構圖
+				.paragraph
+					h3 中英文首頁
+					p 在首頁設計上中英文語系有略微變化。
+					img.border(src="../images/total_ui.jpg",  data-action="zoom" title='網站頁面')
+					.img_tag 網站頁面
 
 				.paragraph
-					h3 首頁
-					p 以顏色區分七大主題週報和文章分類，排版設計希望使用者能快速理解週報架構。
-					img(src="../images/tw568_logoDesign.jpg",  data-action="zoom" title='首頁')
-					.img_tag 首頁
-
-				.paragraph
-					h3 最新週報
-					p 清楚顯示最新一週主題，並可以選擇查看歷史週報。
-					img.border(src="../images/tw568_indexDesign.jpg",  data-action="zoom" title='最新週報頁面')
-					.img_tag 最新週報
-
-				.paragraph
-					h3 文章內文
-					p 規劃統一文章佈局，並有預設內文文字樣式，使各編輯排版更加統一。
-					img.border(src="../images/tw568_rwd.jpg",  data-action="zoom" title='文章內文')
-					.img_tag 文章內文
-
-				.paragraph
-					h3 側邊欄、相關文章
-					p 讓讀者看到可能會感興趣的文章標題，引導讀者繼續瀏覽網頁。
-					img.border(src="../images/tw568_memberCentrer.jpg",  data-action="zoom" title='會員操作介面風格')
-					.img_tag 會員操作介面
-
-				.paragraph
-					h3 電子報
+					h3 內頁設計
 					.row
-						.col_1_2
-							p 週報審核通過就會自動寄電子報給訂閱者，設計固定格式使各週報排版統一，編輯也不用再排版一次，手機也能清楚觀看的RWD電子報。
-						.col_1_2
-							img.border(src="../images/tw568_style.jpg",  data-action="zoom" title='電子報')
-							.img_tag 電子報
-
-			
-
+						.col_1_3
+							img.border(src="../images/total_activity.jpg",  data-action="zoom" title='活動專區')
+							.img_tag 活動專區
+						.col_1_3
+							img.border(src="../images/total_location.jpg",  data-action="zoom" title='周邊景點')
+							.img_tag 周邊景點
+						.col_1_3
+							img.border(src="../images/total_location_intro.jpg",  data-action="zoom" title='周邊景點詳細介紹')
+							.img_tag 周邊景點詳細介紹
+					
 				.paragraph
-					h3 文章審核流程規劃
-					img.border(src="../images/tw568_personalShip.png" data-action="zoom" title='文章審核流程說明圖')
-					.img_tag 文章審核流程說明圖
-
+					h3 客製化地圖
+					p 將google地圖設計為符合網站色調，使網站風格更統一。
+					img.border(src="../images/total_contact.jpg",  data-action="zoom" title='聯絡我們')
+					.img_tag 聯絡我們頁面
 				
-			.color_bg.color_bg_work2
-				.content_1024
-					h3 RWD設計
-					mg.border(src="../images/tw568_personalShip.png" data-action="zoom" title='文章審核流程說明圖')
+
+			h3.text_center RWD設計
+			.color_bg(style="background-image: url('../images/total_bg.png')")
+				img(src="../images/total_mobile.png"  title='RWD設計')
 
 
 				
