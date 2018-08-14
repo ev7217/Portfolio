@@ -166,7 +166,8 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 20px -5px; }
+  margin: 20px -10px;
+  padding: 0px 15px 0px 10px; }
   @media screen and (max-width: 800px) {
     .row {
       -webkit-box-orient: vertical;
@@ -192,12 +193,8 @@ button {
     padding: 20px 20px;
     margin: 5px; }
     .row ul li {
-      max-width: 500px;
       margin-left: 20px;
       list-style-type: disc; }
-      @media screen and (max-width: 768px) {
-        .row ul li {
-          width: 100%; } }
 
 .flex_Y_center {
   -webkit-box-align: center;
