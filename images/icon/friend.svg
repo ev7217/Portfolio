@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/friend</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" id="radialGradient-1">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" gradientTransform="translate(0.500000,0.104224),scale(0.631579,1.000000),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-2">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" gradientTransform="translate(0.500000,0.104224),scale(0.623387,1.000000),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-3">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" gradientTransform="translate(0.500000,0.104224),scale(0.937500,1.000000),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-4">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/friend" transform="translate(1.000000, 1.000000)">
+            <circle id="Oval-3" stroke="#E5E5E5" stroke-width="2" fill-rule="nonzero" cx="31.5" cy="31.5" r="31.5"></circle>
+            <g id="Group-6" transform="translate(10.000000, 14.000000)">
+                <g id="Group" transform="translate(0.178420, 17.000000)"></g>
+                <g id="Group" transform="translate(23.178420, 5.000000)" fill-rule="nonzero">
+                    <circle id="Oval" stroke="url(#radialGradient-1)" stroke-width="2" cx="9.5" cy="5.5" r="5.5"></circle>
+                    <path d="M17.8800076,24.9090909 C17.9028076,24.6383217 17.9142857,24.3654158 17.9142857,24.0909091 C17.9142857,19.1134043 14.1397075,15.0909091 9.5,15.0909091 C4.86029247,15.0909091 1.08571429,19.1134043 1.08571429,24.0909091 C1.08571429,24.3654158 1.09719237,24.6383217 1.1199924,24.9090909 L17.8800076,24.9090909 Z M0.0955793708,25.5274483 C0.0320773097,25.0543394 0,24.5746735 0,24.0909091 C0,18.5247959 4.24592072,14 9.5,14 C14.7540793,14 19,18.5247959 19,24.0909091 C19,24.5746735 18.9679227,25.0543394 18.9044206,25.5274483 L18.8409933,26 L0.159006653,26 L0.0955793708,25.5274483 Z" id="Combined-Shape" fill="url(#radialGradient-2)"></path>
+                </g>
+                <path d="M24.3857321,30.9545455 C24.2160303,24.8804619 19.526532,20.0454545 13.8136077,20.0454545 C8.1006835,20.0454545 3.41118518,24.8804619 3.24148331,30.9545455 L24.3857321,30.9545455 Z M-1.17071642,33.5326715 C-1.27115603,32.794073 -1.32157971,32.0469998 -1.32157971,31.2954545 C-1.32157971,22.5902391 5.43434464,15.5 13.8136077,15.5 C22.1928708,15.5 28.9487952,22.5902391 28.9487952,31.2954545 C28.9487952,32.0469998 28.8983715,32.794073 28.7979319,33.5326715 L28.5304013,35.5 L-0.903185837,35.5 L-1.17071642,33.5326715 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="3" fill="url(#radialGradient-3)" fill-rule="nonzero"></path>
+                <ellipse id="Oval" stroke="url(#radialGradient-4)" stroke-width="2" fill-rule="nonzero" cx="13.1784203" cy="7.5" rx="8" ry="7.5"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

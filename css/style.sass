@@ -61,6 +61,8 @@ h2
 	font-family: 'PT Sans', sans-serif
 
 h3
+	font-size: 18px
+	letter-spacing: 1.5px
 
 h5
 	letter-spacing: 1.5px
@@ -82,6 +84,10 @@ h5
 
 .text_center
 	text-align: center !important
+	margin: 0 auto
+
+.text_left
+	text-align: left !important
 // fonts
 
 hr
@@ -129,8 +135,11 @@ img
 .img_tag
 	font-size: 14px
 	color: $black_30
-	margin: 5px auto 
+	margin: 5px auto
+	text-align: center
 
+.icon
+	display: inline-block
 
 a
 	text-decoration: none
@@ -173,10 +182,9 @@ section
 .row
 	display: flex
 	flex-direction: row
-	margin: 20px -20px
+	margin: 20px -5px
 	@media screen and(max-width: 800px)
 		flex-direction: column
-
 	ul
 		width: 100%
 		display: flex
@@ -184,9 +192,14 @@ section
 		align-items: flex-start
 		align-content: flex-start
 		flex-wrap: wrap
+		padding: 20px 20px
+		margin: 5px
 		li
-			padding: 5px 20px
 			max-width: 500px
+			margin-left: 20px
+			list-style-type: disc
+			@media screen and(max-width: 768px)
+				width: 100%
 
 .flex_Y_center
 	align-items: center
@@ -199,22 +212,31 @@ section
 		flex-direction: column
 
 .col_1_2
-	padding: 5px 20px
+	// padding: 5px 20px
+	margin: 5px
 	width: 50%
 	@media screen and(max-width: 800px)
 		width: 100%
 
 .col_1_3
-	padding: 5px 20px
+	// padding: 5px 20px
+	margin: 5px
 	width: 33.3%
+	@media screen and(max-width: 800px)
+		width: 100%
+
+.col_1_4
+	// padding: 5px 20px
+	margin: 5px
+	width: 25%
 	@media screen and(max-width: 800px)
 		width: 100%
 
 
 
-
 .paragraph
-	padding: 30px 0
+	padding: 30px -5px 30px -5px
+	margin-bottom: 80px
 
 .border
 	border: 1px solid $black_10

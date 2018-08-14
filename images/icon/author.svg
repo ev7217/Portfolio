@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/author</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" gradientTransform="translate(0.500000,0.104224),scale(0.991752,1.000000),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-1">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" gradientTransform="translate(0.500000,0.104224),scale(0.623387,1.000000),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-2">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="522.356507%" gradientTransform="translate(0.500000,0.104224),scale(1.000000,0.190476),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-3">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="10.4223656%" fx="50%" fy="10.4223656%" r="99.4964776%" gradientTransform="translate(0.500000,0.104224),scale(0.750000,1.000000),rotate(90.000000),translate(-0.500000,-0.104224)" id="radialGradient-4">
+            <stop stop-color="#269DEF" offset="0%"></stop>
+            <stop stop-color="#4CD4BF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/author" transform="translate(1.000000, 1.000000)" fill-rule="nonzero">
+            <circle id="Oval-3" stroke="#E5E5E5" stroke-width="2" cx="31.5" cy="31.5" r="31.5"></circle>
+            <g id="Group-3" transform="translate(12.000000, 11.000000)">
+                <ellipse id="Oval" stroke="url(#radialGradient-1)" stroke-width="2" cx="13.7915357" cy="7.72727273" rx="7.79153568" ry="7.72727273"></ellipse>
+                <path d="M25.662869,33.4545455 C25.6955934,33.0709557 25.7120677,32.6843391 25.7120677,32.2954545 C25.7120677,25.2439895 20.2944803,19.5454545 13.6351874,19.5454545 C6.97589462,19.5454545 1.55830714,25.2439895 1.55830714,32.2954545 C1.55830714,32.6843391 1.57478143,33.0709557 1.60750592,33.4545455 L25.662869,33.4545455 Z M0.137183435,34.3305517 C0.0460400137,33.6603141 0,32.9807874 0,32.2954545 C0,24.4101275 6.09409736,18 13.6351874,18 C21.1762775,18 27.2703749,24.4101275 27.2703749,32.2954545 C27.2703749,32.9807874 27.2243349,33.6603141 27.1331914,34.3305517 L27.0421553,35 L0.228219528,35 L0.137183435,34.3305517 Z" id="Combined-Shape" fill="url(#radialGradient-2)"></path>
+                <g id="Group-2" transform="translate(30.436984, 26.506679) rotate(35.000000) translate(-30.436984, -26.506679) translate(25.936984, 9.506679)" stroke="#FFFFFF">
+                    <path d="M4.06493179,-1.5 C6.39002547,-1.5 8.27488632,0.384860844 8.27488632,2.70995453 L8.27488632,29.9545225 L-0.145022737,29.9545225 L-0.145022737,2.70995453 C-0.145022737,0.384860844 1.73983811,-1.5 4.06493179,-1.5 Z" id="Rectangle" stroke-width="3" fill="url(#radialGradient-3)"></path>
+                    <path d="M0.420718717,29.3094998 L7.70914486,29.3094998 L4.06493179,34.7758194 L0.420718717,29.3094998 Z" id="Path-8" fill="url(#radialGradient-4)"></path>
+                    <path d="M0,7.02488632 L8.12986358,7.02488632" id="Path-9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
