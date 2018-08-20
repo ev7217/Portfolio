@@ -201,6 +201,20 @@ button {
   -ms-flex-align: center;
   align-items: center; }
 
+.Y_center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.X_center {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
 .row_img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +232,7 @@ button {
       flex-direction: column; } }
 
 .col_1_2 {
+  position: relative;
   margin: 5px;
   width: 50%; }
   @media screen and (max-width: 800px) {
@@ -225,6 +240,7 @@ button {
       width: 100%; } }
 
 .col_1_3 {
+  position: relative;
   margin: 5px;
   width: 33.3%; }
   @media screen and (max-width: 800px) {
@@ -232,6 +248,7 @@ button {
       width: 100%; } }
 
 .col_1_4 {
+  position: relative;
   margin: 5px;
   width: 25%; }
   @media screen and (max-width: 800px) {
