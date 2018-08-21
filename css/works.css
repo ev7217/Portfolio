@@ -121,7 +121,7 @@
   background-color: #18A193; }
 
 .color_bg_work5 {
-  background-color: #333; }
+  background-color: #0B304F; }
 
 .color_bg_work6 {
   background-color: #333; }
@@ -156,8 +156,17 @@
         max-width: 100px; } }
   .article hr {
     margin-top: 100px; }
+
+.overlapping_right {
+  display: inline-block; }
+  @media screen and (min-width: 1024px) {
+    .overlapping_right {
+      position: relative;
+      margin: 0px;
+      margin-right: -80px;
+      bottom: 150px; } }
   @media screen and (max-width: 1024px) {
-    .article {
+    .overlapping_right {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;

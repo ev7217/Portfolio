@@ -63,6 +63,9 @@ h5 {
 .text_left {
   text-align: left !important; }
 
+.text_right {
+  text-align: right !important; }
+
 hr {
   border-color: rgba(0, 0, 0, 0.1); }
 
@@ -159,6 +162,7 @@ button {
       width: 100%; } }
 
 .row {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
