@@ -34,7 +34,8 @@ body
 			width: 100%
 
 section.works_3d
-	padding: 20px 0px 20px 0px
+	padding: 20px 0px 0px 0px
+
 	.iframe_3d
 		background-color: #eee
 		#3d
@@ -94,32 +95,35 @@ section.works_3d
 		
 
 section.works_craft
-	padding: 100px 0px
-		
-	h2
-		vertical-align: bottom
-		display: inline-block
-		margin-right: 6px
-	h5
-		bottom: 7px
-		vertical-align: bottom
-		display: inline-block
+	padding: 50px 0px
+	margin-bottom: 50px
+	.top_work
+		margin-bottom: 100px
+		h2
+			vertical-align: bottom
+			display: inline-block
+			margin-right: 6px
+		h5
+			bottom: 7px
+			vertical-align: bottom
+			display: inline-block
 
-	.photo
-		width: 600px
-		animation: text_up 1s 0.5s 1 both
-	hr
-		width: 72px
-
-	@media screen and(max-width: 1024px)
-		padding: 50px 0px
 		.photo
-			width: 100%
+			width: 600px
 			height: 400px
-			order: 1
-		.info
-			order: 2
-		
+			animation: text_up 1s 0.5s 1 both
+		hr
+			width: 72px
+
+		@media screen and(max-width: 1024px)
+			padding: 50px 0px
+			.photo
+				width: 100%
+				height: 400px
+				order: 1
+			.info
+				order: 2
+			
 .works_3d,.works_craft,works_2d
 	@media screen and(max-width: 1024px)
 		img
