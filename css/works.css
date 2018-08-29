@@ -72,25 +72,6 @@
         width: 100%;
         bottom: -50px; } }
 
-.web_link {
-  display: inline-block;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  margin-top: 20px;
-  -webkit-transition: 1px;
-  -o-transition: 1px;
-  transition: 1px;
-  letter-spacing: 2px;
-  border: 3px solid rgba(0, 0, 0, 0.6);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-  .web_link:hover {
-    color: rgba(0, 0, 0, 0.6);
-    background-color: transparent; }
-
 .color_bg {
   background-color: #333;
   -webkit-animation: fade_in 0.5s 1  backwards;
