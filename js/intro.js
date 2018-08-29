@@ -1,5 +1,5 @@
 var pageNamePattern = 'work'; 
-var firstPage = 1, lastPage = 6; 
+var firstPage = 1, lastPage = 5; 
 
 $(function () {
    var next = GetNextPageNumber();

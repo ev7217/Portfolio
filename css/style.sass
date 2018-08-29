@@ -159,6 +159,22 @@ button
 	border: none 
 	transition: 0.5s
 
+.web_link
+  display: inline-block
+  color:  white
+  background-color: $black_60
+  padding: 10px 20px
+  margin-top: 20px
+  transition: 1px
+  letter-spacing: 2px
+  border: 3px solid $black_60
+  user-select: none
+
+  &:hover
+    color: $black_60
+    background-color: transparent
+
+
 
 section
 
@@ -182,6 +198,10 @@ section
   padding: 0px 10px
   @media screen and(max-width: 800px)
   	width: 100%
+
+.p_20
+	padding: 20px
+
 
 .row
 	position: relative
@@ -216,6 +236,10 @@ section
 	position: absolute
 	left: 50%
 	transform: translateX(-50%)
+
+.margin_X_auto
+	margin-left: auto
+	margin-right: auto
 
 .row_img
 	display: flex
@@ -256,6 +280,9 @@ section
 
 .border
 	border: 1px solid $black_10
+
+.border_circle
+	border-radius: 50%
 
 .border_right
 	border-right: 1px solid $black_10
@@ -549,13 +576,16 @@ a.top_work,.sec_work,.photo
 	display: flex
 	justify-content: space-around
 	align-items: center
-	animation: text_up 1s 0.5s 1 both
+	animation: text_up 1s 0.5s 1 backwards
+	
 	.photo
+		position: relative
 		height: 500px
 		width: 300px
 		display: inline-block
 		box-shadow: 0px 0px 20px 0px $black_10
 		transition: 0.5s
+
 		&::after
 			position: absolute
 			content: ""
@@ -595,6 +625,15 @@ a.top_work
 			box-shadow: 0px 5px 20px 0px $black_30
 			&::after
 				background: rgba(255,255,255,0)
+
+
+.resume
+	background-size: cover
+	background-position: center center
+	display: inline-block
+	width: 100%
+	height: 80%
+	
 		
 .footer
 	a.link

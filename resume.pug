@@ -1,0 +1,103 @@
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.5')
+		title Mandy Jian
+		link(rel="icon" href="images/favicon.png" type="image/png" sizes="32x32")
+			//- fonts
+		link(rel="stylesheet prefetcht", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
+		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700") 
+		//- reset css
+		link(rel="stylesheet", href="css/reset.css")
+		//- plugin css
+		link(rel="stylesheet", href="css/plugins/fancybox/jquery.fancybox.min.css")
+		//- costom css
+		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="css/index.css")
+
+	body
+		header.navdiv
+			.content 
+				.logo
+					//- a(href="about.html")
+					.icon
+						img(src="images/logo.svg", alt="Logo")
+					.text
+						h5.top_hello.mobile_hidden Hello, I’m 
+						h1.top_name.mobile_hidden Mandy.
+						h1.top_name.desktop_hidden Mandy
+
+				.navbar
+					.nav
+						ul
+							li.mobile_hidden
+								a(href="index.html") UI DESIGN
+							li.mobile_hidden 
+								a(href="other_works.html") OTHER WORKS
+							li.mobile_hidden 
+								a(href="about.html") ABOUT
+							li.mobile_hidden 
+								a(href="") RESUME
+
+		.mobile_nav
+			input#open_menu(type="checkbox")
+			.menu
+				.hunburger_menu
+					ul
+						li.line1
+						li.line2
+						li.line3
+				.mobile_menu
+					ul
+						li 
+							a(href="index.html")
+								h6 UI DESIGN
+						li 
+							a(href="other_works.html")
+								h6 OTHER WORKS
+						li 
+							a(href="about.html")
+								h6 ABOUT
+						li
+							a(href="resume.html")
+								h6 RESUME
+
+		.works
+			section.works_web.text_up
+				.content
+					.top_work
+						a.resume.col_1_2(href="images/otherWorks/2d_wolf.jpg" data-fancybox="images" style="background-image: url('images/otherWorks/2d_wolf_index.jpg')")
+						.col_1_2
+							.margin_X_auto.p_20
+								h3 MY RESUME
+								p 
+								a(href="").web_link DOWNLOAD PDF
+							
+
+
+		foot.footer
+
+				a.link(href="other_works.html")
+					.text
+						h2.title_en OTHER WORKS
+						hr.topic
+
+				.contact
+
+					.content
+
+						.mail
+							.icon
+								img(src="images/footer_logo.svg", alt="")
+							.text
+								h5 Let’s talk to me
+								p ev217@gmail.com
+							 
+
+						.top#go_to_top
+							button
+								img(src="images/top.svg", alt="" title="Go to top" )
+
+		script(src='js/plugins/jquery/jquery-3.3.1.min.js')
+		script(src='js/plugins/fancybox/jquery.fancybox.min.js')
+		script(src='js/index.js')

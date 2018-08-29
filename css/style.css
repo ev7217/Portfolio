@@ -137,6 +137,25 @@ button {
   -o-transition: 0.5s;
   transition: 0.5s; }
 
+.web_link {
+  display: inline-block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  margin-top: 20px;
+  -webkit-transition: 1px;
+  -o-transition: 1px;
+  transition: 1px;
+  letter-spacing: 2px;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .web_link:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background-color: transparent; }
+
 .content_1440 {
   width: 1440px;
   margin: 0 auto;
@@ -160,6 +179,9 @@ button {
   @media screen and (max-width: 800px) {
     .content_800 {
       width: 100%; } }
+
+.p_20 {
+  padding: 20px; }
 
 .row {
   position: relative;
@@ -219,6 +241,10 @@ button {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
+.margin_X_auto {
+  margin-left: auto;
+  margin-right: auto; }
+
 .row_img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,6 +291,9 @@ button {
 
 .border {
   border: 1px solid rgba(0, 0, 0, 0.1); }
+
+.border_circle {
+  border-radius: 50%; }
 
 .border_right {
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
@@ -583,9 +612,10 @@ a.top_work .info:active .title_p p, .sec_work .info:active .title_p p, .photo .i
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation: text_up 1s 0.5s 1 both;
-  animation: text_up 1s 0.5s 1 both; }
+  -webkit-animation: text_up 1s 0.5s 1 backwards;
+  animation: text_up 1s 0.5s 1 backwards; }
   .top_work .photo {
+    position: relative;
     height: 500px;
     width: 300px;
     display: inline-block;
@@ -637,6 +667,13 @@ a.top_work .photo:hover {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3); }
   a.top_work .photo:hover::after {
     background: rgba(255, 255, 255, 0); }
+
+.resume {
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+  width: 100%;
+  height: 80%; }
 
 .footer a.link {
   display: inline-block;
