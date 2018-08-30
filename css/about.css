@@ -9,7 +9,8 @@
   height: 260px;
   text-align: center;
   -webkit-animation: fade_in 3s 1 both;
-  animation: fade_in 3s 1 both; }
+  animation: fade_in 3s 1 both;
+  border-radius: 0; }
   @media screen and (max-width: 1024px) {
     .about_banner {
       height: 200px; } }

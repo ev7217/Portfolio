@@ -156,6 +156,21 @@ button {
     color: rgba(0, 0, 0, 0.6);
     background-color: transparent; }
 
+.download {
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 10px 20px 10px 0px;
+  border-bottom: 3px solid #2ba39d;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .download:hover {
+    border-bottom: 3px solid rgba(255, 91, 44, 0.8); }
+
 .content_1440 {
   width: 1440px;
   margin: 0 auto;
