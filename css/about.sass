@@ -37,17 +37,18 @@ $green: #2ba39d
 .me
 	width: 80%
 	position: absolute
-	transform: translateY(-85%)
 	margin: 0px 100px
+	margin-top: 50px
 	animation: text_up_me 1s 1 both
 	@media screen and(max-width: 1024px)
+		margin-top: -180px
 		transform: translateY(-100%)
 		margin: 50px 0px
 		width: 100%
 		text-align: center
 	.pic
-		background: url(https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/22154233_10207924327626481_4765822512266333177_n.jpg?_nc_cat=0&_nc_eui2=AeF1K8Dwz_hGlFyYyI8fE3koSrlFDHfZDAltXyzVZHrdYp2CUIsMxWc8sPf54-0CBd4fyj7aHJDXeK_DEnhlXF8hTx-95heIHU4PRCNcImbgNg&_nc_pt=1&oh=5b7b32253378f3fb77ef702c94c8cdb3&oe=5B9DAC1C)
-		background-position: center
+		background-size: cover
+		background-position: center center
 		display: inline-block
 		width: 160px
 		height: 160px
@@ -96,7 +97,8 @@ $green: #2ba39d
 
 .resume
 	position: relative
-	padding: 60px 0px 100px 0px
+	padding: 80px 0px 100px 0px
+	margin-top: -20px
 	.row
 		padding: 20px 0px
 		margin-bottom: 10px

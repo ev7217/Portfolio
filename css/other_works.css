@@ -1,6 +1,7 @@
 @media screen and (min-width: 1024px) {
   .mobile_nav {
     display: none; } }
+
 body {
   padding-top: 55px; }
 
@@ -15,9 +16,10 @@ body {
 section.works_3d {
   padding: 20px 0px 0px 0px; }
   section.works_3d .iframe_3d {
-    background-color: #eeeeee;
+    background-color: #eee;
     z-index: 200; }
     section.works_3d .iframe_3d #3d {
+      -webkit-animation: fade_in 1s 2s 1 both;
       animation: fade_in 1s 2s 1 both; }
   @media screen and (max-width: 1024px) {
     section.works_3d {
@@ -29,34 +31,47 @@ section.works_3d {
         width: 100%; } }
 
 .works_2d {
-  margin: 50px -0.3vw;
+  margin: 50px -.3vw;
+  -webkit-animation: text_up 1s 1.6s 1 both;
   animation: text_up 1s 1.6s 1 both;
   font-size: 0; }
   .works_2d .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .works_2d a.work_2d {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #eeeeee;
+    background-color: #eee;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
     flex: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
     height: 60%;
     max-height: 240px;
     width: 180px;
-    margin: 0.3vw;
+    margin: .3vw;
     opacity: 0.9; }
     .works_2d a.work_2d:hover {
+      -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
       box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
       opacity: 1; }
     .works_2d a.work_2d img {
       width: 100%;
       height: auto; }
     .works_2d a.work_2d:focus {
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
       opacity: 1; }
 
@@ -76,6 +91,7 @@ section.works_craft {
     section.works_craft .top_work .photo {
       width: 600px;
       height: 400px;
+      -webkit-animation: text_up 1s 0.5s 1 both;
       animation: text_up 1s 0.5s 1 both; }
     section.works_craft .top_work hr {
       width: 72px; }
@@ -85,15 +101,34 @@ section.works_craft {
         section.works_craft .top_work .photo {
           width: 100%;
           height: 400px;
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
           order: 1; }
         section.works_craft .top_work .info {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
           order: 2; } }
 
 @media screen and (max-width: 1024px) {
   .works_3d img, .works_craft img, works_2d img {
     width: 100%; } }
 
+.resume {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.resume_pdf {
+  background-size: cover;
+  background-position: center 0;
+  display: inline-block;
+  width: 100%;
+  height: 1000px; }
+  @media screen and (max-width: 768px) {
+    .resume_pdf {
+      height: 500px; } }
+
 .footer a.link::before {
   background-image: url(../images/ortherWorks_footer_hover.jpg); }
+
 .footer a.link::after {
   background-image: url(../images/ortherWorks_footer.jpg); }
