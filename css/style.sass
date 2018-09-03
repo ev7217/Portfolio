@@ -137,9 +137,9 @@ img
 	user-select: none
 
 .img_tag
-	font-size: 14px
-	color: $black_30
-	margin: 5px auto
+	font-size: 16px
+	color: $black_60
+	margin: 15px auto
 	text-align: center
 
 .icon
@@ -195,12 +195,21 @@ section
   @media screen and(max-width: 1440px)
   	width: 100%
 
+.content_1200
+  width: 1200px
+  margin: 0 auto
+  padding: 0px 10px
+  @media screen and(max-width: 1440px)
+  	width: 100%
+
+
 .content_1024,.content
   width: 1024px
   margin: 0 auto
   padding: 0px 10px
   @media screen and(max-width: 1024px)
  		width: 100%
+
 
 .content_800
   width: 800px
@@ -283,6 +292,31 @@ section
 		width: 100%
 
 
+.col_1_5
+	position: relative
+	// padding: 5px 20px
+	margin: 5px
+	width: 20%
+	@media screen and(max-width: 800px)
+		width: 100%
+
+
+.col_2_5
+	position: relative
+	// padding: 5px 20px
+	margin: 5px
+	width: 40%
+	@media screen and(max-width: 800px)
+		width: 100%
+
+.col_3_5
+	position: relative
+	// padding: 5px 20px
+	margin: 5px
+	width: 60%
+	@media screen and(max-width: 800px)
+		width: 100%
+
 
 .paragraph
 	padding: 30px -5px 30px -5px
@@ -293,6 +327,9 @@ section
 
 .border_circle
 	border-radius: 50%
+
+.border_white
+	border: 2px solid white
 
 .border_right
 	border-right: 1px solid $black_10

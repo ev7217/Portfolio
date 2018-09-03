@@ -111,9 +111,9 @@ img {
   user-select: none; }
 
 .img_tag {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.3);
-  margin: 5px auto;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 15px auto;
   text-align: center; }
 
 .icon {
@@ -177,6 +177,14 @@ button {
   padding: 0px 10px; }
   @media screen and (max-width: 1440px) {
     .content_1440 {
+      width: 100%; } }
+
+.content_1200 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 10px; }
+  @media screen and (max-width: 1440px) {
+    .content_1200 {
       width: 100%; } }
 
 .content_1024, .content {
@@ -300,6 +308,30 @@ button {
     .col_1_4 {
       width: 100%; } }
 
+.col_1_5 {
+  position: relative;
+  margin: 5px;
+  width: 20%; }
+  @media screen and (max-width: 800px) {
+    .col_1_5 {
+      width: 100%; } }
+
+.col_2_5 {
+  position: relative;
+  margin: 5px;
+  width: 40%; }
+  @media screen and (max-width: 800px) {
+    .col_2_5 {
+      width: 100%; } }
+
+.col_3_5 {
+  position: relative;
+  margin: 5px;
+  width: 60%; }
+  @media screen and (max-width: 800px) {
+    .col_3_5 {
+      width: 100%; } }
+
 .paragraph {
   padding: 30px -5px 30px -5px;
   margin-bottom: 80px; }
@@ -309,6 +341,9 @@ button {
 
 .border_circle {
   border-radius: 50%; }
+
+.border_white {
+  border: 2px solid white; }
 
 .border_right {
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
