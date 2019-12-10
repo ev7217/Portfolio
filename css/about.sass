@@ -38,7 +38,7 @@ $green: #2ba39d
 	width: 80%
 	position: absolute
 	margin: 0px 100px
-	margin-top: 50px
+	margin-top: 30px
 	animation: text_up_me 1s 1 both
 	@media screen and(max-width: 1024px)
 		margin-top: -180px
@@ -59,16 +59,15 @@ $green: #2ba39d
 			height: 120px
 	.name
 		display: inline-block
-		top: -20px
 	h1
-		color: $light_blue
-		font-size: 48px
+		color: $white
+		font-size: 64px
 		font-weight: normal
 		font-family: 'PTSans-Caption'
-		margin: 0px 25px 0px 25px
-		top: 50px
+		margin: 20px 0px 0px 30px
 		text-shadow: 0px 3px 10px $black_20
 		@media screen and(max-width: 1024px)
+			color: $black_80
 			font-size: 36px
 	h2
 		color: $white
@@ -124,30 +123,33 @@ $green: #2ba39d
 		animation-delay: 1s	
 
 	.type
-		color: $black_60
+		color: $black_70
 		display: inline-block
 		max-width: 150px
 		min-width: 150px
-		padding: 25px 20px
+		padding: 16px 20px
 		color: $black_20
 		letter-spacing: 1px
 		font-size: 18px 
 		position: relative
-		border-right: 2px solid $black_10
+		border-right: 1px solid $black_10
 	.context
 		color: $black_60
 
 	ul
 		display: block
 		margin: 0px
-		padding: 10px 20px
+		padding: 16px 20px
 		vertical-align: center
 		li
-			margin-bottom: 5px
 			list-style: none
 			line-height: 20px
+			h3
+				line-height: 1.3em
+				font-size: 18px
 			.p
 				display: inline-block
+				font-size: 15px
 			.contact_type
 				width: 70px
 		
@@ -160,7 +162,8 @@ $green: #2ba39d
 			display: inline
 			color: $black_60
 			font-size: 14px
-
+	hr
+		margin-top: 100px
 
 .back
 	padding: 10px 5px

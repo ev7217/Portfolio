@@ -19,7 +19,7 @@
   width: 80%;
   position: absolute;
   margin: 0px 100px;
-  margin-top: 50px;
+  margin-top: 30px;
   -webkit-animation: text_up_me 1s 1 both;
   animation: text_up_me 1s 1 both; }
   @media screen and (max-width: 1024px) {
@@ -45,18 +45,17 @@
         width: 120px;
         height: 120px; } }
   .me .name {
-    display: inline-block;
-    top: -20px; }
+    display: inline-block; }
   .me h1 {
-    color: rgba(81, 242, 224, 0.9);
-    font-size: 48px;
+    color: #ffffff;
+    font-size: 64px;
     font-weight: normal;
     font-family: 'PTSans-Caption';
-    margin: 0px 25px 0px 25px;
-    top: 50px;
+    margin: 20px 0px 0px 30px;
     text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); }
     @media screen and (max-width: 1024px) {
       .me h1 {
+        color: rgba(0, 0, 0, 0.8);
         font-size: 36px; } }
   .me h2 {
     color: #ffffff;
@@ -135,29 +134,32 @@
     -webkit-animation-delay: 1s;
     animation-delay: 1s; }
   .resume .type {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.7);
     display: inline-block;
     max-width: 150px;
     min-width: 150px;
-    padding: 25px 20px;
+    padding: 16px 20px;
     color: rgba(0, 0, 0, 0.2);
     letter-spacing: 1px;
     font-size: 18px;
     position: relative;
-    border-right: 2px solid rgba(0, 0, 0, 0.1); }
+    border-right: 1px solid rgba(0, 0, 0, 0.1); }
   .resume .context {
     color: rgba(0, 0, 0, 0.6); }
   .resume ul {
     display: block;
     margin: 0px;
-    padding: 10px 20px;
+    padding: 16px 20px;
     vertical-align: center; }
     .resume ul li {
-      margin-bottom: 5px;
       list-style: none;
       line-height: 20px; }
+      .resume ul li h3 {
+        line-height: 1.3em;
+        font-size: 18px; }
       .resume ul li .p {
-        display: inline-block; }
+        display: inline-block;
+        font-size: 15px; }
       .resume ul li .contact_type {
         width: 70px; }
     .resume ul img {
@@ -168,6 +170,8 @@
       display: inline;
       color: rgba(0, 0, 0, 0.6);
       font-size: 14px; }
+  .resume hr {
+    margin-top: 100px; }
 
 .back {
   padding: 10px 5px;
