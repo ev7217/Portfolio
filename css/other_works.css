@@ -13,25 +13,25 @@ body {
       .works .iframe_3d {
         width: 100%; } }
 
-section.works_3d {
-  padding: 20px 0px 0px 0px; }
-  section.works_3d .iframe_3d {
-    background-color: #eee;
-    z-index: 200; }
-    section.works_3d .iframe_3d #3d {
-      -webkit-animation: fade_in 1s 2s 1 both;
-      animation: fade_in 1s 2s 1 both; }
+section.works_3d .iframe_3d {
+  background-color: #eee;
+  z-index: 200; }
+  section.works_3d .iframe_3d #3d {
+    -webkit-animation: fade_in 1s 2s 1 both;
+    animation: fade_in 1s 2s 1 both; }
+
+@media screen and (max-width: 1024px) {
+  section.works_3d {
+    padding: 0px; } }
+
+section.works_3d .info {
+  width: 35%; }
   @media screen and (max-width: 1024px) {
-    section.works_3d {
-      padding: 0px; } }
-  section.works_3d .info {
-    width: 35%; }
-    @media screen and (max-width: 1024px) {
-      section.works_3d .info {
-        width: 100%; } }
+    section.works_3d .info {
+      width: 100%; } }
 
 .works_2d {
-  margin: 50px -.3vw;
+  margin: 40px -.3vw;
   -webkit-animation: text_up 1s 1.6s 1 both;
   animation: text_up 1s 1.6s 1 both;
   font-size: 0; }
@@ -58,7 +58,7 @@ section.works_3d {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    height: 60%;
+    height: 50vh;
     max-height: 240px;
     width: 180px;
     margin: .3vw;
@@ -76,8 +76,8 @@ section.works_3d {
       opacity: 1; }
 
 section.works_craft {
-  padding: 50px 0px;
-  margin-bottom: 50px; }
+  padding: 80px 0px 60px 0px;
+  margin-bottom: 100px; }
   section.works_craft .top_work {
     margin-bottom: 100px; }
     section.works_craft .top_work h2 {

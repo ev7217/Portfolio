@@ -51,7 +51,7 @@ p
 	
 h1
 	letter-spacing: 3px
-	font-size: 36px
+	font-size: 56px
 	color: $black_90
 	font-family: 'PT Sans', sans-serif
 h2
@@ -337,26 +337,28 @@ section
 		border-right: none
 
 .logo
-	width: 300px
-	padding: 10px 20px
-	margin: 0 auto 
+	width: 100%
+	margin-bottom: -30px
+	padding: 20px 0px 0px 30px
 	font-family: 'PT Sans'
 	animation: text_up 1s 1 both
 	vertical-align: center
-	text-align: center
+	text-align: left
 	user-select: none
 	*
 		transition: 0.3s
 	.icon
-		margin-right: 17px
+		margin:  30px 20px 0px 0px
 		img
-			width: 78px
+			width: 72px
 
 	h1,h5
 		text-align: left
+		margin: 0.5em 0
 	h1
 		line-height: 0px
-
+	h5
+		font-size: 22px
 	// &:hover
 	// 	h1,h5
 	// 		color: $orange
@@ -370,30 +372,34 @@ section
 	// 	img
 	// 		transform: translateY(0px)
 	@media screen and(max-width: 1024px)
-		h1,h5
+		margin: 0
+		padding: 0
+		text-align: center
+		h1
 			text-align: center
+			font-size: 42px
+			margin: 25px auto
 		.icon
-			margin-right: 0px
-
+			text-align: center
+			margin: 0px auto
 	
 	
 .navbar
 	vertical-align: bottom
-	width: 100%
 	border-bottom: 3px solid $black_10
 	animation: text_up 1s 0.2s 1 both
 	opacity: 0
-	margin-bottom: 30px
+	margin-bottom: 60px
+
 	@media screen and(max-width: 1024px)
 		margin: 0 
 	
 	ul
-		height: 60px
-		margin: 0px auto
-		max-width: 500px
+		height: 78px
+		padding-right: 15px
 		display: flex
 		align-items: center
-		justify-content: center
+		justify-content: flex-end
 		list-style-type: none
 		user-select: none
 		li
@@ -405,7 +411,7 @@ section
 			position: relative
 			transition: 0.1s
 			position: relative
-			letter-spacing: 2px
+			letter-spacing: 1px
 			@media screen and(max-width: 1024px)
 				margin: 0px auto
 			&::after
@@ -423,14 +429,16 @@ section
 					bottom: -3px
 			a,
 				+full_block
-				padding: 20px 15px
+				padding: 30px 15px
 				font-size: 16px
+				font-weight: bold
+
 				color: $black_40
 			li.nowli
 				&::after
 					width: 100%
 			.nowpage
-				padding: 20px 15px
+				padding: 30px 15px
 				color: $black_70
 		
 
