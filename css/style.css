@@ -298,12 +298,28 @@ button {
     .col_1_3 {
       width: 100%; } }
 
+.col_2_3 {
+  position: relative;
+  margin: 5px;
+  width: 66.6%; }
+  @media screen and (max-width: 800px) {
+    .col_2_3 {
+      width: 100%; } }
+
 .col_1_4 {
   position: relative;
   margin: 5px;
   width: 25%; }
   @media screen and (max-width: 800px) {
     .col_1_4 {
+      width: 100%; } }
+
+.col_3_4 {
+  position: relative;
+  margin: 5px;
+  width: 75%; }
+  @media screen and (max-width: 800px) {
+    .col_3_4 {
       width: 100%; } }
 
 .col_1_5 {
@@ -681,6 +697,12 @@ a.top_work .info:active .title_p p, .sec_work .info:active .title_p p, .photo .i
   animation: text_up 1s 0.5s 1 backwards; }
   .top_work .tag {
     margin-top: 30px; }
+  .top_work .info {
+    padding: 40px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    width: 40%;
+    display: inline-block; }
   .top_work .photo {
     position: relative;
     height: 500px;
@@ -705,18 +727,12 @@ a.top_work .info:active .title_p p, .sec_work .info:active .title_p p, .photo .i
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s; }
-  @media screen and (max-width: 1024px) {
-    .top_work .photo {
-      width: 100%; }
-      .top_work .photo img {
-        width: 100%;
-        height: auto; } }
-  .top_work .info {
-    padding: 40px;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-    width: 40%;
-    display: inline-block; }
+    @media screen and (max-width: 1024px) {
+      .top_work .photo {
+        width: 100%; }
+        .top_work .photo img {
+          width: 100%;
+          height: auto; } }
   @media screen and (max-width: 1024px) {
     .top_work {
       -webkit-box-orient: vertical;

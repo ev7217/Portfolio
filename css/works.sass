@@ -27,6 +27,23 @@ $work_black_color: #333
 $work_chair_color: #4F4A49
 
 
+p,h1,h2,h3,h4,h5
+  text-align: left
+  font-weight: normal
+  line-height: 200%
+
+p
+  font-size: 16px
+  line-height: 24px
+
+h1
+  line-height: 0px
+  @media screen and(max-width: 768px)
+    line-height: 100%
+
+h3
+  font-size: 28px
+
 
 .content_1440,.content_1200,.content_1024,.content_800
   padding: 50px 10px
@@ -46,21 +63,22 @@ $work_chair_color: #4F4A49
   z-index: 40
   display: flex
   justify-content: space-between
+
   p
     font-size: 16px
+  
   .content_1440
     text-align: left
     z-index: 20
+  
   .article_title
     display: inline-block
     text-align: left
     word-break: break-word
     animation: text_up 1s 1 both
     width: 40%
-    h1
-      line-height: 0px
-      @media screen and(max-width: 1024px)
-        line-height: 100%
+
+
     hr
       border: 3px solid $green
       border-radius: 0
@@ -68,12 +86,10 @@ $work_chair_color: #4F4A49
       margin: 10px 0
 
     .title_en
-      font-size: 64px
+      font-size: 58px
       letter-spacing: 2px
-      font-weight: normal
 
     .tag
-      // font-weight: bold
       margin-bottom: 30px
       font-size: 26px
 
@@ -106,15 +122,17 @@ $work_chair_color: #4F4A49
 .color_bg
   background-color: $color_bg
   animation: fade_in 0.5s 1  backwards
-  h1,h2,h3,h4,h5
-    line-height: 200%
+
   h1,h2,h3,h4,h5,p,li
     font-weight: 300
     animation: text_up 1s 0.5s 1 both
     color: $white_text
+
+
   li
     font-size: 16px
     line-height: 30px
+
   .img_tag
     color: rgba(256,256,256,0.3)
 
@@ -138,20 +156,12 @@ $work_chair_color: #4F4A49
 
 
 .article
-  position: relative
-  padding: 30px 0px 130px 0px
-  animation: text_up 1s 0.7s 1 backwards
-  text-align: center
-  p,h1,h2,h3,h4,h5
-    text-align: left
-    font-weight: normal
-  h1,h2,h3,h4,h5
-    line-height: 200%
-  h3
-    font-size: 28px
-  p
-    font-size: 16px
-    line-height: 24px
+
+  h1,h2,h3,h4,h5,p,li
+    animation: text_up 1s 0.5s 1 both
+
+
+
 
   img
     margin: 25px auto 0px auto
@@ -183,29 +193,29 @@ $work_chair_color: #4F4A49
 
 .footer_botton
   position: relative
+  margin-bottom: 200px
+  font-size: 18px
 
   #prev,#next,.article_back
   	position: absolute
   	display: inline-block
-  	color: $black_30
-  	margin-top: 50px
+  	color: $black_60
+  	margin-top: 60px
   	&:hover
   		color: $orange
   #prev
   	left: 0px
-  	letter-spacing: 1px
+
 
   #next
   	right: 0px
-  	letter-spacing: 2px
 
 a.article_back
 	left: 50%
 	transform: translateX(-50%)
 	padding-bottom: 5px
-	border-bottom: 2px solid $black_30
+	border-bottom: 2px solid $black_60
 	border-radius: 0
-	letter-spacing: 2px
 	&:hover
 		border-bottom: 2px solid $orange
 
@@ -214,6 +224,3 @@ a.article_back
     display: inline-block
 
 
-.p_20
-  padding-left: 20px
-  padding-right: 20px

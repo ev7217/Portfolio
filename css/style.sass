@@ -48,6 +48,8 @@ p
 	font-size: 14px
 	color: $black_60
 	line-height: 24px
+
+
 	
 h1
 	letter-spacing: 3px
@@ -281,12 +283,27 @@ section
 	@media screen and(max-width: 800px)
 		width: 100%
 
+.col_2_3
+	position: relative
+	margin: 5px
+	width: 66.6%
+	@media screen and(max-width: 800px)
+		width: 100%
+
 .col_1_4
 	position: relative
 	margin: 5px
 	width: 25%
 	@media screen and(max-width: 800px)
 		width: 100%
+
+.col_3_4
+	position: relative
+	margin: 5px
+	width: 75%
+	@media screen and(max-width: 800px)
+		width: 100%
+
 
 .col_1_5
 	position: relative
@@ -636,6 +653,12 @@ a.top_work,.sec_work,.photo
 	.tag
 		margin-top: 30px
 
+	.info
+		padding: 40px
+		animation-delay: 0.5s
+		width: 40%
+		display: inline-block
+
 	.photo
 		position: relative
 		height: 500px
@@ -655,19 +678,12 @@ a.top_work,.sec_work,.photo
 			transform: translate(-50%,-50%)
 			transition: 0.5s
 
-
-	@media screen and(max-width: 1024px)
-		.photo
+		@media screen and(max-width: 1024px)
 			width: 100%
 			img
 				width: 100%
 				height: auto
 
-	.info
-		padding: 40px
-		animation-delay: 0.5s
-		width: 40%
-		display: inline-block
 
 	@media screen and(max-width: 1024px)
 		flex-direction: column

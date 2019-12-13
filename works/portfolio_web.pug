@@ -46,17 +46,14 @@ html
 			.content_1440
 				.article_title
 					H1.title_en.white.text_shadow 個人作品集
-					.tag
-						p.white.text_shadow web, visual design, UI ,  HTML , CSS , JS
+					.tag.white.text_shadow web, visual design, UI ,  HTML , CSS , JS
 					p.white.text_shadow 本作品集網站整合個人專業技能 從設計到撰寫製作
-					a(href="https://zpl.io/VDzWQEq" target="_blank").web_link Mockup in Zeplin
 				
 
 		.color_bg.color_bg_work_portfolio
 			.content_1440
 
 					h3 設計理念
-					br
 					p 簡潔清爽的介面風格將視覺焦點留給作品<br>加入CSS動畫微互動提升使用者和介面的互動體驗
 
 
@@ -66,22 +63,19 @@ html
 				.paragraph
 					h3 User Story
 					.row
-						ul.border
+						.col_1_3.border.p_20
 							img.icon(src="../images/icon/author.svg")
-							h3.text_center 作者
-							br
+							h5.text_center 作者
 							p.text_center 我希望使用者能快速地瞭解我的專業能力和過去的工作內容
 
-						ul.border
+						.col_1_3.border.p_20
 							img.icon(src="../images/icon/company.svg")
-							h3.text_center 求才公司
-							br
+							h5.text_center 求才公司
 							p.text_center 我想快速地閱覽作品、簡歷，有興趣的話要能取得作者的聯絡方式
 
-						ul.border
+						.col_1_3.border.p_20
 							img.icon(src="../images/icon/friend.svg")
-							h3.text_center 作者朋友
-							br
+							h5.text_center 作者朋友
 							p.text_center 我想欣賞作品並了解作者的工作
 
 
@@ -165,16 +159,20 @@ html
 					p 選用Sublime Text撰寫PUG,SASS,JS
 					img.border(src="../images/portfolio_pug.jpg",  data-action="zoom" title='聯絡我們')
 					.img_tag 撰寫畫面示意
+
 				.paragraph
 					h3 微互動
 					p 加上CSS動畫增加互動性和動態感
+
 					.row
 						.col_1_2
-							img.border(src="../images/portfolio_footer.jpg",  data-action="zoom" title='製作兩張位置一樣的圖' style="margin:0")
+							img.border(src="../images/portfolio_footer.jpg",  data-action="zoom" title='製作兩張位置一樣的圖' style="margin:0;")
 							.img_tag 製作兩張位置一樣的圖
+
 						.col_1_2
 							iframe.border(width="100%" height="260" src="https://www.youtube.com/embed/PvYzfJMLx3M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
 							.img_tag CSS轉場互動效果
+
 			div(style="background-image: url('../images/portfolio_rwd.jpg');background-position: center;background-repeat: no-repeat;background-size:cover")
 				.content_1440(style="height: 80vh")
 					.row(style="height: 100%;")

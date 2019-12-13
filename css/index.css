@@ -56,9 +56,12 @@ body {
     -ms-flex: auto;
     flex: auto;
     margin-bottom: 30px; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       .sec_works .sec_work {
         max-width: 320px; } }
+    @media screen and (max-width: 1024px) {
+      .sec_works .sec_work {
+        margin: 0px 5px 30px 5px; } }
     @media screen and (max-width: 768px) {
       .sec_works .sec_work {
         width: 100%; } }
