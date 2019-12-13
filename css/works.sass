@@ -17,12 +17,13 @@ $white_two: #fcfcfc
 $white_text: rgba(255, 255, 255, 0.95)
 $green: #57d0cc
 $color_bg: #333
-$work1_color: #038065
-$work2_color: #414985
-$work3_color: #333333
-$work4_color: #18A193
-$work5_color: #0B304F
-$work6_color: #333
+$work_setupwizard_color: #171717
+$work_tw568_color: #038065
+$work_icc_color: #414985
+$work_total_color: #333333
+$work_portfolio_color: #18A193
+$work_formosaas_color: #0B304F
+$work_black_color: #333
 $work_chair_color: #4F4A49
 
 
@@ -57,7 +58,9 @@ $work_chair_color: #4F4A49
     animation: text_up 1s 1 both
     width: 40%
     h1
-      line-height: 10px
+      line-height: 0px
+      @media screen and(max-width: 1024px)
+        line-height: 100%
     hr
       border: 3px solid $green
       border-radius: 0
@@ -65,16 +68,16 @@ $work_chair_color: #4F4A49
       margin: 10px 0
 
     .title_en
-      font-size: 42px
+      font-size: 64px
       letter-spacing: 2px
       font-weight: normal
 
     .tag
       // font-weight: bold
-      margin-bottom: 20px
-      font-size: 16px
-      letter-spacing: 1px
-      color: $black_60
+      margin-bottom: 30px
+      font-size: 26px
+
+      
 
   .banner_img
     max-width: 800px
@@ -116,18 +119,18 @@ $work_chair_color: #4F4A49
     color: rgba(256,256,256,0.3)
 
 
-.color_bg_work1
-  background-color: $work1_color
-.color_bg_work2
-  background-color: $work2_color
-.color_bg_work3
-  background-color: $work3_color
-.color_bg_work4
-  background-color: $work4_color
-.color_bg_work5
-  background-color: $work5_color
-.color_bg_work6
-  background-color: $work6_color
+.color_bg_work_setupwizard
+  background-color: $work_setupwizard_color
+.color_bg_work_tw568
+  background-color: $work_tw568_color
+.color_bg_work_icc
+  background-color: $work_icc_color
+.color_bg_work_total
+  background-color: $work_total_color
+.color_bg_work_portfolio
+  background-color: $work_portfolio_color
+.color_bg_work_formosaas
+  background-color: $work_formosaas_color
 .color_bg_gray_white
   background-color: $gray_white
 .color_bg_work_chair
@@ -144,13 +147,14 @@ $work_chair_color: #4F4A49
     font-weight: normal
   h1,h2,h3,h4,h5
     line-height: 200%
-
+  h3
+    font-size: 28px
   p
     font-size: 16px
     line-height: 24px
 
   img
-    margin: 20px auto 0px auto
+    margin: 25px auto 0px auto
     max-width: 100%
     @media screen and(max-width: 1024px)
       width: 100%

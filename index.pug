@@ -3,6 +3,7 @@ html
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.5')
 		meta(name="robots" content="noindex")
+		meta(name="googlebot" content="noindex")
 		title Mandy Jian
 		link(rel="icon" href="images/favicon.png" type="image/png" sizes="32x32")
 			//- fonts
@@ -66,18 +67,32 @@ html
 			section.works_web.text_up
 				.content
 					a(href="works/work1.html").top_work
-						.photo.firstWork(style="background-image: url('images/tw568_index.jpg')")
+						.photo.firstWork(style="background-image: url('images/setupwizard_index.jpg')")
 						.info
-							h2.title 台灣物流寶
+							h2.title_en Setup wizard
 							hr.topic
 
 							.title_p 
-								p 整合台灣跨境物流貨況信息，使用者能在線上比較各家物流方案並下訂運單。
-								.tag WEB /  2017
+								p 監視裝置安裝精靈
+								.tag WEB /  2019
 
 
 					.sec_works
+
 							a(href="works/work2.html").sec_work
+
+								.photo(style="background-image: url('images/tw568_index.jpg')")
+
+								.info
+									h2.title 台灣物流寶
+									hr.topic.desktop_hidden
+
+									.title_p 
+										p 整合台灣跨境物流貨況信息，使用者能在線上比較各家物流方案並下訂運單。
+
+									.tag WEB /  2017
+
+							a(href="works/work3.html").sec_work
 
 								.photo(style="background-image: url('images/icc_index.jpg')")
 
@@ -91,7 +106,7 @@ html
 									.tag WEB /  2017
 
 
-							a(href="works/work3.html").sec_work
+							a(href="works/work4.html").sec_work
 
 								.photo(style="background-image: url('images/total_index.jpg')")
 
@@ -106,33 +121,42 @@ html
 									.tag WEB /  2017
 
 
-							a(href="works/work4.html").sec_work
+							//- a(href="works/work5.html").sec_work
 
-								.photo(style="background-image: url('images/portfolio_index.jpg')")
+							//- 	.photo(style="background-image: url('images/portfolio_index.jpg')")
 
-								.info
-									h2.title 個人作品集
+							//- 	.info
+							//- 		h2.title 個人作品集
 
-									hr.topic.desktop_hidden
+							//- 		hr.topic.desktop_hidden
 
-									.title_p 
-										p 本作品集的設計製作過程
+							//- 		.title_p 
+							//- 			p 本作品集的設計製作過程
 
-									.tag WEB /  2018
+							//- 		.tag WEB /  2018
 								
 			
-			section.works_app.mobile_hidden.shadowblock
+			section.works_logo.text_up.shadowblock
 				.content
-					
-					.top_work
+					a(href="works/portfolio_web.html").top_work
 						.info
-							h2.title 條碼掃描APP
+							h2.title 個人作品集
+							hr.topic
 							.title_p 
-								p 台灣物流寶的產品之一，為快遞派送貨物時司機有需要紀錄貨況需求而設計的APP，右方為此專案的prototype。
-								.tag APP /  2017
+								p 本作品集的設計製作過程
+							.tag WEB /  2018
+						.photo(style="background-image: url('images/portfolio_index.jpg')")
 
-						.app
-							iframe(src="https://marvelapp.com/3h2b9a0?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true" frameborder="0")
+
+					//- .top_work
+					//- 	.info
+					//- 		h2.title 條碼掃描APP
+					//- 		.title_p 
+					//- 			p 台灣物流寶的產品之一，為快遞派送貨物時司機有需要紀錄貨況需求而設計的APP，右方為此專案的prototype。
+					//- 			.tag APP /  2017
+
+					//- 	.app
+					//- 		iframe(src="https://marvelapp.com/3h2b9a0?emb=1&iosapp=false&frameless=false" width="390" height="755" allowTransparency="true" frameborder="0")
 
 
 			section.works_logo.text_up
@@ -140,7 +164,7 @@ html
 					a(href="works/work5.html").top_work
 						.photo(style="background-image: url('images/formosaas_index.svg')")
 						.info
-							h2.title FORMOSAAS
+							h2.title_en FORMOSAAS
 							hr.topic
 							.title_p 
 								p 軟體服務視覺設計

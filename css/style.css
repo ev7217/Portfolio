@@ -32,7 +32,7 @@ h1 {
 h2 {
   color: rgba(0, 0, 0, 0.8);
   letter-spacing: 1.3px;
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'PT Sans', sans-serif; }
 
 h3 {
@@ -46,12 +46,11 @@ h5 {
   font-weight: 400; }
 
 .title_en {
-  font-size: 36px;
-  letter-spacing: 1.5px; }
+  font-size: 32px;
+  line-height: 150%; }
 
 .white {
-  color: white;
-  font-weight: 300; }
+  color: white !important; }
 
 .text_shadow {
   text-shadow: rgba(0, 0, 0, 0.6) 0.1em 0.1em 1em; }
@@ -215,7 +214,7 @@ button {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin: 20px -10px;
+  margin: 0px -10px;
   padding: 0px 15px 0px 10px; }
   @media screen and (max-width: 800px) {
     .row {
@@ -314,6 +313,14 @@ button {
   width: 20%; }
   @media screen and (max-width: 800px) {
     .col_1_5 {
+      width: 100%; } }
+
+.col_1_6 {
+  position: relative;
+  margin: 3px;
+  width: 16.6%; }
+  @media screen and (max-width: 800px) {
+    .col_1_6 {
       width: 100%; } }
 
 .col_2_5 {

@@ -31,21 +31,22 @@
     animation: text_up 1s 1 both;
     width: 40%; }
     .banner .article_title h1 {
-      line-height: 10px; }
+      line-height: 0px; }
+      @media screen and (max-width: 1024px) {
+        .banner .article_title h1 {
+          line-height: 100%; } }
     .banner .article_title hr {
       border: 3px solid #57d0cc;
       border-radius: 0;
       width: 70px;
       margin: 10px 0; }
     .banner .article_title .title_en {
-      font-size: 42px;
+      font-size: 64px;
       letter-spacing: 2px;
       font-weight: normal; }
     .banner .article_title .tag {
-      margin-bottom: 20px;
-      font-size: 16px;
-      letter-spacing: 1px;
-      color: rgba(0, 0, 0, 0.6); }
+      margin-bottom: 30px;
+      font-size: 26px; }
   .banner .banner_img {
     max-width: 800px;
     display: inline-block;
@@ -83,23 +84,23 @@
   .color_bg .img_tag {
     color: rgba(255, 255, 255, 0.3); }
 
-.color_bg_work1 {
+.color_bg_work_setupwizard {
+  background-color: #171717; }
+
+.color_bg_work_tw568 {
   background-color: #038065; }
 
-.color_bg_work2 {
+.color_bg_work_icc {
   background-color: #414985; }
 
-.color_bg_work3 {
+.color_bg_work_total {
   background-color: #333333; }
 
-.color_bg_work4 {
+.color_bg_work_portfolio {
   background-color: #18A193; }
 
-.color_bg_work5 {
+.color_bg_work_formosaas {
   background-color: #0B304F; }
-
-.color_bg_work6 {
-  background-color: #333; }
 
 .color_bg_gray_white {
   background-color: #f8f8f8; }
@@ -118,11 +119,13 @@
     font-weight: normal; }
   .article h1, .article h2, .article h3, .article h4, .article h5 {
     line-height: 200%; }
+  .article h3 {
+    font-size: 28px; }
   .article p {
     font-size: 16px;
     line-height: 24px; }
   .article img {
-    margin: 20px auto 0px auto;
+    margin: 25px auto 0px auto;
     max-width: 100%; }
     @media screen and (max-width: 1024px) {
       .article img {

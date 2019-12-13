@@ -3,7 +3,8 @@ html
 		meta(charset='UTF-8')
 		meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.5')
 		meta(name="robots" content="noindex")
-		title 個人作品集-Mandy Jian
+		meta(name="googlebot" content="noindex")
+		title 萄萄居-Mandy Jian
 		link(rel="icon" href="../images/favicon.png" type="image/png" sizes="32x32")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700") 
@@ -41,157 +42,62 @@ html
 
 			
 			
-		header.banner(style="background-image: url(../images/portfolio_banner.jpg)")
+		header.banner(style="background-image: url(../images/total_banner.jpg)")
 			.content_1440
 				.article_title
-					H1.title_en.white.text_shadow 個人作品集
-					.tag
-						p.white.text_shadow web, visual design, UI ,  HTML , CSS , JS
-					p.white.text_shadow 本作品集網站整合個人專業技能 從設計到撰寫製作
-					a(href="https://zpl.io/VDzWQEq" target="_blank").web_link Mockup in Zeplin
+					H1.title_en.white.text_shadow 萄萄居青年旅社
+					.tag.white.text_shadow web, visual design, UI
+					p.white.text_shadow 萄萄居是位在澳洲的打工度假青年旅社，網站主要功能除了介紹房型和旅社還有介紹當地的工作機會。
+					//- a(href="http://totalbackpackers.mynet.com.tw/" target="_blank").web_link 測試網站
 				
 
-		.color_bg.color_bg_work4
+		.color_bg.color_bg_work_total
 			.content_1440
 
-					h3 設計理念
+					h3 介面風格設計
 					br
-					p 簡潔清爽的介面風格將視覺焦點留給作品<br>加入CSS動畫微互動提升使用者和介面的互動體驗
+					p 以淡雅的深咖啡色配上優美的澳洲風景圖片，營造度假的休閒氛圍。
 
 
 
 		main.article
 			.content_1024
 				.paragraph
-					h3 User Story
-					.row
-						ul.border
-							img.icon(src="../images/icon/author.svg")
-							h3.text_center 作者
-							br
-							p.text_center 我希望使用者能快速地瞭解我的專業能力和過去的工作內容
-
-						ul.border
-							img.icon(src="../images/icon/company.svg")
-							h3.text_center 求才公司
-							br
-							p.text_center 我想快速地閱覽作品、簡歷，有興趣的話要能取得作者的聯絡方式
-
-						ul.border
-							img.icon(src="../images/icon/friend.svg")
-							h3.text_center 作者朋友
-							br
-							p.text_center 我想欣賞作品並了解作者的工作
-
-
+					h3 中英文首頁
+					p 在首頁設計上中英文語系有略微變化。
+					img.border(src="../images/total_ui.jpg",  data-action="zoom" title='網站頁面')
+					.img_tag 網站頁面
 
 				.paragraph
+					h3 內頁設計
 					.row
-						.col_1_2
-							h3 Functional Map
-							img.border(src="../images/portfolio_FunctionalMap.jpg",  data-action="zoom" title='Functional Map')
-
-						.col_1_2
-							h3 Flow Chart
-							img.border(src="../images/portfolio_FlowChart.jpg",  data-action="zoom" title='Flow Chart')
+						.col_1_3
+							img.border(src="../images/total_activity.jpg",  data-action="zoom" title='活動專區')
+							.img_tag 活動專區
+						.col_1_3
+							img.border(src="../images/total_location.jpg",  data-action="zoom" title='周邊景點')
+							.img_tag 周邊景點
+						.col_1_3
+							img.border(src="../images/total_location_intro.jpg",  data-action="zoom" title='周邊景點詳細介紹')
+							.img_tag 周邊景點詳細介紹
+					
+				.paragraph
+					h3 客製化地圖
+					p 將google地圖設計為符合網站色調，使網站風格更統一。
+					img.border(src="../images/total_contact.jpg",  data-action="zoom" title='聯絡我們')
+					.img_tag 聯絡我們頁面
 				
 
-			.color_bg.color_bg_work4
-				.content_1440
-					h3 Wireframe
-					.row
-						.col_1_4
-							img(src="../images/portfolio_Wireframe_UIDesign.jpg"  title='UI Design')
-							.img_tag UI Design
-
-						.col_1_4
-							img(src="../images/portfolio_Wireframe_ortherWorks.jpg"  title='Orther Works')
-							.img_tag Orther Works
-
-						.col_1_4
-							img(src="../images/portfolio_Wireframe_about.jpg"  title='About')
-							.img_tag About
-
-						.col_1_4
-							img(src="../images/portfolio_Wireframe_workIntro.jpg"  title='Work Intro')
-							.img_tag Work Intro
-						
-			
+			h3.text_center RWD設計
+			.color_bg(style="background-image: url('../images/total_bg.png')")
+				img(src="../images/total_mobile.png"  title='RWD設計')
 
 
-			.shadowblock.color_bg_gray_white
-				.content_1440
-					.paragraph
-						.row
-							.col_1_2
-								h3 Style Guide
-								img.border(src="../images/portfolio_style.jpg",  data-action="zoom" title='Style Guide')
-								.img_tag 顏色和字型樣式
-
-							.col_1_2
-								h3 Icon Design
-								img.border(src="../images/portfolio_logo.jpg",  data-action="zoom" title='個人標誌設計')
-								.img_tag 個人標誌設計
-
-							
-
-
-					.paragraph.text_left
-						h3 Mockup
-						p 以Sketch繪製UI設計圖，內容圖則用Photoshop和Illustrator製作
-						a(href="https://zpl.io/VDzWQEq" target="_blank").web_link Mockup in Zeplin
-						.row
-							.col_1_4
-								img.border(src="../images/portfolio_mockup_UIDesign.jpg" data-action="zoom"  title='UI Design')
-								.img_tag UI Design
-
-							.col_1_4
-								img.border(src="../images/portfolio_mockup_ortherWorks.jpg" data-action="zoom"  title='Orther Works')
-								.img_tag Orther Works
-
-							.col_1_4
-								img.border(src="../images/portfolio_mockup_about.jpg" data-action="zoom"  title='About')
-								.img_tag About
-
-							.col_1_4
-								img.border(src="../images/portfolio_mockup_workIntro.jpg" data-action="zoom"  title='Work Intro')
-								.img_tag Work Intro
-
-			.content_1024
-
-				.paragraph
-					h3 程式撰寫
-					p 選用Sublime Text撰寫PUG,SASS,JS
-					img.border(src="../images/portfolio_pug.jpg",  data-action="zoom" title='聯絡我們')
-					.img_tag 撰寫畫面示意
-				.paragraph
-					h3 微互動
-					p 加上CSS動畫增加互動性和動態感
-					.row
-						.col_1_2
-							img.border(src="../images/portfolio_footer.jpg",  data-action="zoom" title='製作兩張位置一樣的圖' style="margin:0")
-							.img_tag 製作兩張位置一樣的圖
-						.col_1_2
-							iframe.border(width="100%" height="260" src="https://www.youtube.com/embed/PvYzfJMLx3M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
-							.img_tag CSS轉場互動效果
-			div(style="background-image: url('../images/portfolio_rwd.jpg');background-position: center;background-repeat: no-repeat;background-size:cover")
-				.content_1440(tyle="height: 80%")
-					.row
-						.col_1_3
-						.col_1_3
-						.col_1_3(style="height: 100%")
-							.Y_center.X_center
-								h2 RWD DESIGN
-								a.text_left(href="https://material.io/tools/resizer/#device=window&url=https%3A%2F%2Fev7217.github.io%2FPortfolio%2Findex.html&width=480" target="_blank").web_link  See different sizes
-							//- img(src="../images/portfolio_rwd.jpg", alt="")
-
-			
 				
 			.footer_botton.content_1024
 				a#prev(href="") &lt; Previous 
 				a.article_back(href="../index.html") UI DESIGN
 				a#next(href="") Next &gt;
-
 
 
 
