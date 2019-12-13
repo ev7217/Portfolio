@@ -46,8 +46,7 @@ h5 {
   font-weight: 400; }
 
 .title_en {
-  font-size: 32px;
-  line-height: 150%; }
+  font-size: 36px; }
 
 .white {
   color: white !important; }
@@ -77,15 +76,15 @@ hr.topic {
   -o-transition: 0.8s;
   transition: 0.8s; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .desktop_hidden {
-    display: none; } }
+    display: none !important; } }
 
 @media screen and (max-width: 1024px) {
   * {
     border-radius: 0px; }
   .mobile_hidden {
-    display: none; } }
+    display: none !important; } }
 
 .shadowblock {
   background-color: #fcfcfc;
@@ -627,22 +626,23 @@ button {
     overflow: hidden; }
   .works .info {
     width: 100%;
-    padding: 50px 20px; }
+    padding: 50px 30px 80px 30px; }
     .works .info .title {
-      margin-bottom: 8px;
       -webkit-animation: text_up 1s 0.7s 1 both;
       animation: text_up 1s 0.7s 1 both; }
     .works .info hr {
+      margin-top: 8px;
       -webkit-animation: text_up 1s 0.8s 1 both;
       animation: text_up 1s 0.8s 1 both; }
     .works .info .title_p {
-      margin-top: 18px;
+      margin-top: 15px;
       -webkit-animation: text_up 1s 1s 1 both;
       animation: text_up 1s 1s 1 both; }
+      .works .info .title_p p {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.6); }
     .works .info .tag {
-      margin-top: 25px;
       font-size: 12px;
-      letter-spacing: 1px;
       color: rgba(0, 0, 0, 0.3);
       -webkit-animation: text_up 1s 1.1s 1 both;
       animation: text_up 1s 1.1s 1 both; }
@@ -679,6 +679,8 @@ a.top_work .info:active .title_p p, .sec_work .info:active .title_p p, .photo .i
   align-items: center;
   -webkit-animation: text_up 1s 0.5s 1 backwards;
   animation: text_up 1s 0.5s 1 backwards; }
+  .top_work .tag {
+    margin-top: 30px; }
   .top_work .photo {
     position: relative;
     height: 500px;
@@ -732,6 +734,10 @@ a.top_work .photo:hover {
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3); }
   a.top_work .photo:hover::after {
     background: rgba(255, 255, 255, 0); }
+
+a.sec_work .tag {
+  position: absolute;
+  bottom: 80px; }
 
 .resume {
   margin-top: 100px;
