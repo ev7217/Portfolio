@@ -4,7 +4,7 @@ html
 		meta(name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.5')
 		meta(name="robots" content="noindex")
 		meta(name="googlebot" content="noindex")
-		title FORMOSAAS-Mandy Jian
+		title 個人作品集-Mandy Jian
 		link(rel="icon" href="../images/favicon.png" type="image/png" sizes="32x32")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700") 
@@ -42,88 +42,146 @@ html
 
 			
 			
-		header.banner(style="background-image: url(../images/formosaas_banner.jpg)")
+		header.banner(style="background-image: url(../images/portfolio_banner.jpg)")
 			.content_1440
 				.article_title
-					H1.title_en.white.text_shadow FORMOSAAS
-					.tag.white.text_shadow LOGO, visual design
-
+					H1.title_en.white.text_shadow 個人作品集
+					.tag.white.text_shadow web, visual design, UI ,  HTML , CSS , JS
+					p.white.text_shadow 本作品集網站整合個人專業技能 從設計到撰寫製作
 				
 
-		.color_bg.color_bg_work_formosaas
+		.color_bg.color_bg_work_portfolio
 			.content_1440
 
-					p Formosaas為軟體整合服務產品，由福爾摩沙意象發想視覺風格。
+					h3 設計理念
+					p 簡潔清爽的介面風格將視覺焦點留給作品<br>加入CSS動畫微互動提升使用者和介面的互動體驗
 
 
 
 		main.article
 			.content_1024
 				.paragraph
-					h3 設計目標
+					h3 User Story
 					.row
-						
-						.col_1_3.border(style="padding: 20px")
-							img.icon(src="../images/icon/time.svg")
-							h3.text_center 現代感
-							p.text_center 符合軟體視覺設計潮流
+						.col_1_3.text_center.border.p_20
+							img.icon(src="../images/icon/author.svg")
+							h5.text_center 作者
+							p.text_center 我希望使用者能快速地瞭解我的專業能力和過去的工作內容
 
-						.col_1_3.border(style="padding: 20px")
-							img.icon(src="../images/icon/formosa.svg")
-							h3.text_center 聯想性
-							p.text_center 具有福爾摩沙的意象
-						
-						.col_1_3.border(style="padding: 20px")
-							img.icon(src="../images/icon/geometry.svg")
-							h3.text_center 幾何與簡潔
-							p.text_center 易記憶、重製
+						.col_1_3.text_center.border.p_20
+							img.icon(src="../images/icon/company.svg")
+							h5.text_center 求才公司
+							p.text_center 我想快速地閱覽作品、簡歷，有興趣的話要能取得作者的聯絡方式
+
+						.col_1_3.text_center.border.p_20
+							img.icon(src="../images/icon/friend.svg")
+							h5.text_center 作者朋友
+							p.text_center 我想欣賞作品並了解作者的工作
+
 
 
 				.paragraph
-					h3 設計過程
 					.row
 						.col_1_2
-							img.border(src="../images/formosaas_logo_process.svg",  data-action="zoom" title='Functional Map')
-							.img_tag 一開始以字首F為設計原點
+							h3 Functional Map
+							img.border(src="../images/portfolio_FunctionalMap.jpg",  data-action="zoom" title='Functional Map')
 
 						.col_1_2
-							img.border(src="../images/formosaas_logo_result.svg",  data-action="zoom" title='Flow Chart')
-							.img_tag 選擇具有福爾摩沙意象的藍綠色融入山巒形狀
-
-
-				.paragraph
-					h3 最終版本
-					.row
-						.col_1_2
-							img.border(src="../images/fomosaas_simple.svg",  data-action="zoom")
-							.img_tag 主視覺
-						.col_1_2
-							img.border(src="../images/fomosaas_dark_simple.svg",  data-action="zoom")
-							.img_tag 深色版主視覺
+							h3 Flow Chart
+							img.border(src="../images/portfolio_FlowChart.jpg",  data-action="zoom" title='Flow Chart')
 				
-			.shadowblock.color_bg_gray_white
-				.content_1024
-					.paragraph
-						h3 視覺設計範例
-						img(src="../images/formosaas_card.jpg",  data-action="zoom" st)
-						.img_tag 名片示意圖
-					.paragraph
-						img.shadowblock(src="../images/formosaas_letter.svg" title='UI Design' )
-						.img_tag 信封示意圖
 
-
-
-			.color_bg.color(style="background-image: url('../images/formosaas_subservice.jpg');background-size:cover;background-position: center;background-repeat: no-repeat")
-				.content_1440(style="height: 80%")
+			.color_bg.color_bg_work_portfolio
+				.content_1440
+					h3 Wireframe
 					.row
-						.col_1_3(style="height: 100%")
-							.Y_center.X_center
-								h2 Subservice
-								p 子服務視覺規劃
-							//- img(src="../images/portfolio_rwd.jpg", alt="")
-						.col_1_3
-						.col_1_3
+						.col_1_4
+							img(src="../images/portfolio_Wireframe_UIDesign.jpg"  title='UI Design')
+							.img_tag UI Design
+
+						.col_1_4
+							img(src="../images/portfolio_Wireframe_ortherWorks.jpg"  title='Orther Works')
+							.img_tag Orther Works
+
+						.col_1_4
+							img(src="../images/portfolio_Wireframe_about.jpg"  title='About')
+							.img_tag About
+
+						.col_1_4
+							img(src="../images/portfolio_Wireframe_workIntro.jpg"  title='Work Intro')
+							.img_tag Work Intro
 						
+			
+
+
+			.shadowblock.color_bg_gray_white
+				.content_1440
+					.paragraph
+						.row
+							.col_1_2
+								h3 Style Guide
+								img.border(src="../images/portfolio_style.jpg",  data-action="zoom" title='Style Guide')
+								.img_tag 顏色和字型樣式
+
+							.col_1_2
+								h3 Icon Design
+								img.border(src="../images/portfolio_logo.jpg",  data-action="zoom" title='個人標誌設計')
+								.img_tag 個人標誌設計
+
+							
+
+
+					.paragraph.text_left
+						h3 Mockup
+						p 以Sketch繪製UI設計圖，內容圖則用Photoshop和Illustrator製作
+						a(href="https://zpl.io/VDzWQEq" target="_blank").web_link Mockup in Zeplin
+						.row
+							.col_1_4
+								img.border(src="../images/portfolio_mockup_UIDesign.jpg" data-action="zoom"  title='UI Design')
+								.img_tag UI Design
+
+							.col_1_4
+								img.border(src="../images/portfolio_mockup_ortherWorks.jpg" data-action="zoom"  title='Orther Works')
+								.img_tag Orther Works
+
+							.col_1_4
+								img.border(src="../images/portfolio_mockup_about.jpg" data-action="zoom"  title='About')
+								.img_tag About
+
+							.col_1_4
+								img.border(src="../images/portfolio_mockup_workIntro.jpg" data-action="zoom"  title='Work Intro')
+								.img_tag Work Intro
+
+			.content_1024
+
+				.paragraph
+					h3 程式撰寫
+					p 選用Sublime Text撰寫PUG,SASS,JS
+					img.border(src="../images/portfolio_pug.jpg",  data-action="zoom" title='聯絡我們')
+					.img_tag 撰寫畫面示意
+
+				.paragraph
+					h3 微互動
+					p 加上CSS動畫增加互動性和動態感
+
+					.row
+						.col_1_2
+							img.border(src="../images/portfolio_footer.jpg",  data-action="zoom" title='製作兩張位置一樣的圖' style="margin:0;")
+							.img_tag 製作兩張位置一樣的圖
+
+						.col_1_2
+							iframe.border(width="100%" height="260" src="https://www.youtube.com/embed/PvYzfJMLx3M?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+							.img_tag CSS轉場互動效果
+
+			div(style="background-image: url('../images/portfolio_rwd.jpg');background-position: center;background-repeat: no-repeat;background-size:cover")
+				.content_1440
+					.row(style="height: 80vh;")
+						.col_1_3
+						.col_1_3
+						.col_1_3(style="padding: 30vh 30px 0px 30px;")
+							h2 RWD DESIGN
+							a.text_left.web_link(href="https://material.io/tools/resizer/#device=window&url=https%3A%2F%2Fev7217.github.io%2FPortfolio%2Findex.html&width=480" target="_blank") See different sizes
+							//- img(src="../images/portfolio_rwd.jpg", alt="")
 
 			
 				
