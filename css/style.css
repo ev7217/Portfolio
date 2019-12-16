@@ -376,7 +376,7 @@ button {
 .logo {
   width: 100%;
   margin-bottom: -30px;
-  padding: 20px 0px 0px 30px;
+  padding: 20px 30px;
   font-family: 'PT Sans';
   -webkit-animation: text_up 1s 1 both;
   animation: text_up 1s 1 both;
@@ -391,7 +391,7 @@ button {
     -o-transition: 0.3s;
     transition: 0.3s; }
   .logo .icon {
-    margin: 30px 20px 0px 0px; }
+    margin: 25px 13px; }
     .logo .icon img {
       width: 72px; }
   .logo h1, .logo h5 {
