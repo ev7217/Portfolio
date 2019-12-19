@@ -163,12 +163,13 @@
         display: inline-block;
         font-size: 16px; }
       .resume ul li .contact_type {
-        width: 70px; }
+        width: 120px;
+        height: 2em; }
     .resume ul img {
       display: inline; }
     .resume ul a {
       line-height: 14px;
-      margin-left: 5px;
+      margin-left: 20px;
       display: inline;
       color: rgba(0, 0, 0, 0.6);
       font-size: 14px; }
