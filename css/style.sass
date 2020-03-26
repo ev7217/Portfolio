@@ -149,10 +149,17 @@ img
 
 a
 	text-decoration: none
-	color: $black_80
-	transition: 0.3s
+	color: $black_60
+	transition: 0.5s
 	&::active
 		color: $orange
+a.border
+	border: 2px solid $black_30
+	padding: 5px 10px
+	border-radius: 100px
+	&:hover
+		color: $orange
+		border-color: $orange
 
 button
 	cursor: pointer
@@ -495,11 +502,13 @@ section
 				transform: translate(-50%,-50%) rotate(-45deg)
 
 		.mobile_menu
-			opacity: 0.95
 			height: 100%
-			width: 100%
+			width: 400px
+			@media screen and(max-width: 1024px)
+				width: 100%
 			transition: 0.2s
 			z-index: 50
+
 			ul
 				opacity: 1
 
@@ -518,7 +527,7 @@ section
 			z-index: 60
 			ul
 				height: 100%
-				width: 100%
+				width: 40%
 				position: absolute
 				top: 50%
 				left: 50%
@@ -544,24 +553,22 @@ section
 		.mobile_menu
 			position: fixed
 			width: 0
-			height: 0
 			top: 50%
-			left: 50%
-			transform: translate(-50%,-50%)
-			background-color: $white_two
-			opacity: 0
+			right: 0
+			transform: translateY(-50%)
+			background-color: $white
+			opacity: 0.95
 			z-index: 20
 			overflow: hidden
 
 			ul
 				position: fixed
 				top: 50%
-				left: 50%
-				transform: translate(-50%,-50%)
+				left: 10%
+				transform: translate(0,-50%)
 				list-style-type: none
 				display: flex
 				flex-direction: column
-				text-align: center
 				z-index: 30
 				opacity: 0
 				transition: 0.3s 0.6s
@@ -571,15 +578,14 @@ section
 					cursor: pointer
 					z-index: 40
 					h6
-						font-size: 28px
-						color: $black_90
-						font-weight: normal
+						font-size: 32px
+						color: $black_80
 						font-family: 'PT Sans', sans-serif
-						letter-spacing: 3px
+						letter-spacing: 2px
 						white-space: nowrap
 
 					a
-						color: $black_80
+						color: $white
 					&:hover
 						h6
 							color: $orange
@@ -587,9 +593,6 @@ section
 						h6
 							color: darken($orange,10%)
 
-					@media screen and(max-width: 768px)
-						h6
-							font-size: 20px
 	
 
 
