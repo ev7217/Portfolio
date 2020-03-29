@@ -362,77 +362,66 @@ section
 
 .logo
 	width: 100%
-	margin-bottom: -30px
-	padding: 20px 30px
+	padding: 20px 0px 20px 0px
 	font-family: 'PT Sans'
-	animation: text_up 1s 1 both
+	// animation: fade_in 2s 1 both
 	vertical-align: center
-	text-align: left
+	text-align: center
 	user-select: none
 	*
 		transition: 0.3s
-	.icon
-		margin:  25px 13px
-		img
-			width: 72px
-
+	
 	h1,h5
+		// display: inline-block
+		vertical-align: center
 		text-align: left
-		margin: 0.5em 0
+		line-height: 120%
+		margin: 0
 	h1
-		line-height: 0px
+		font-size: 72px
 	h5
-		font-size: 22px
-	// &:hover
-	// 	h1,h5
-	// 		color: $orange
-	// 		transform: translateY(-3px)
-	// 	img
-	// 		transform: translateY(-3px)
-	// &:active
-	// 	h1,h5
-	// 		cABOUTolor: $orange
-	// 		transform: translateY(0px)
-	// 	img
-	// 		transform: translateY(0px)
+		font-size: 36px
+	.icon
+		padding: 0
+		margin: 0
+		width: 120px
+		img
+			width: 100%
+		@media screen and(max-width: 1024px)	
+			text-align: center
+			margin: 0px auto
+	
 	@media screen and(max-width: 1024px)
 		margin: 0
 		padding: 0
 		text-align: center
 		h1
 			text-align: center
-			font-size: 42px
-			margin: 25px auto
-		.icon
-			text-align: center
-			margin: 0px auto
-	
+			font-size: 62px
+			margin: 0 auto 40px auto
+			line-height: 100%
+
 	
 .navbar
 	vertical-align: bottom
-	border-bottom: 3px solid $black_10
-	animation: text_up 1s 0.2s 1 both
-	opacity: 0
-	margin-bottom: 60px
-
+	left: 0
+	border-bottom: 1px solid $black_10
+	// animation: text_up 1s 0.2s 1 both
+	// opacity: 0
+	margin-bottom: 80px
 	@media screen and(max-width: 1024px)
 		margin: 0 
 	
 	ul
-		height: 78px
 		padding-right: 15px
 		display: flex
-		align-items: center
-		justify-content: flex-end
+		justify-content: center
 		list-style-type: none
 		user-select: none
 		li
 			height: 100%
-			margin-bottom: -5px
 			margin-left: 0px
 			margin-right: 0px
-			transition: 0.1s
-			position: relative
 			transition: 0.1s
 			position: relative
 			letter-spacing: 1px
@@ -446,21 +435,22 @@ section
 				transform: translateX(-50%)
 				background-color: $orange
 				width: 0px
-				height: 3px
+				height: 2px
 				z-index: 20
 				@media screen and(max-width: 1024px)
 					width: 50%
 					bottom: -3px
 			a,
 				+full_block
-				padding: 30px 15px
+				padding: 25px 15px
 				font-size: 16px
 				color: $black_40
 			li.nowli
 				&::after
 					width: 100%
 			.nowpage
-				padding: 30px 15px
+				font-size: 16px
+				padding: 25px 15px
 				color: $black_70
 		
 
@@ -504,7 +494,7 @@ section
 		.mobile_menu
 			height: 100%
 			width: 400px
-			@media screen and(max-width: 1024px)
+			@media screen and(max-width: 600px)
 				width: 100%
 			transition: 0.2s
 			z-index: 50
@@ -560,6 +550,7 @@ section
 			opacity: 0.95
 			z-index: 20
 			overflow: hidden
+			box-shadow: $black_20 0 0 30px
 
 			ul
 				position: fixed
@@ -578,10 +569,10 @@ section
 					cursor: pointer
 					z-index: 40
 					h6
-						font-size: 32px
-						color: $black_80
-						font-family: 'PT Sans', sans-serif
-						letter-spacing: 2px
+						font-size: 28px
+						font-weight: normal
+						color: $black_90
+						letter-spacing: 1px
 						white-space: nowrap
 
 					a
@@ -781,62 +772,70 @@ a.sec_work
 
 .contact
 	width: 100%
-	background-color: $light_gray
+	background-color: $gray_white
 	.content
-		padding: 60px 0px
+		padding: 20px 0px
 		display: flex
 		justify-content: space-between
 		align-items: center
-		.icon
-			margin-right: 17px
-		.text
-			p
-				display: inline
-			// #copy
-			//   width: 10px 
-			//   height: 12px
-			//   display: inline-block
-			//   cursor: pointer
-			//   margin: 3px 8px
-			//   position: relative
-			//   background: url(https://i.imgur.com/Hz8KH26.png) 
-			//   &:hover
-			//     background: url(https://i.imgur.com/XUpneFa.png)
+		.mail
+			display: flex
+			align-content: center
+			align-items: center
+			.icon
+				margin-right: 17px
+				opacity: 0.5
+			.text
+				h5,p
+					color: black_60
+				p
+					display: inline
+				// #copy
+				//   width: 10px 
+				//   height: 12px
+				//   display: inline-block
+				//   cursor: pointer
+				//   margin: 3px 8px
+				//   position: relative
+				//   background: url(https://i.imgur.com/Hz8KH26.png) 
+				//   &:hover
+				//     background: url(https://i.imgur.com/XUpneFa.png)
 				
 		.top
 			cursor: pointer
 			transition: 0.5s
 			text-align: center
-			padding: 30px 50px
-			transform: translateY(20px)
+			padding: 20px 40px
+			transform: translateY(0)
+
 			&::after
 				display: block
 				content: "TOP"
 				padding-top: 5px
 				letter-spacing: 2px
-				color: $black_40
+				color: $black_80
 				transition: 0.5s
 				opacity: 0
 			&:hover
-				transform: translateY(0px)
+				transform: translateY(-15px)
 				&::after
 					opacity: 1
 
 			&:active
 				transform: translateY(-5px)
 		@media screen and(max-width: 1024px)
+			padding: 20px 80px 20px 80px
 			flex-direction: column
 			.icon
 				margin-right: 0px
 			.top
 				order: 1
-				margin-bottom: 70px
 			.mail
 				order: 2
 				.icon,.copy
 					display: none
 				h5
-					margin-bottom: 25px
+					margin-bottom: 10px
 
 
 

@@ -6,23 +6,32 @@
     <meta name="robots" content="noindex"/>
     <meta name="googlebot" content="noindex"/>
     <title>About-Mandy Jian</title>
-    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32"/>
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
+    <link rel="stylesheet prefetcht" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700"/>
+    <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/about.css"/>
   </head>
-  <body>
-    <div class="about_banner content_1440">
-      <div class="row">
-        <div class="col_1_2"><img src="images/about_banner.png"/></div>
-        <div class="col_1_2 p_20">
-          <H1>Mandy Jian</H1>
-          <h5>我是簡曼婷，可以叫我Mandy，我是一位重視使用者經驗與美感間平衡的介面設計師，偏好簡潔優雅的設計風格，期望可以持續創造帶給人們美好感受的產品。</h5>
+</html>
+<body>
+  <header class="navdiv">
+    <div class="content">
+      <div class="logo">
+        <div class="icon"><img src="images/logo.svg" alt="Logo"/></div>
+      </div>
+      <div class="navbar">
+        <div class="nav">
+          <ul>
+            <li class="mobile_hidden"><a href="index.html">UI DESIGN</a></li>
+            <li class="mobile_hidden"><a href="other_works.html">OTHER WORKS</a></li>
+            <li class="nowli">
+              <div class="nowpage">ABOUT</div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="mobile_nav">
+    <div class="mobile_nav desktop_hidden">
       <input id="open_menu" type="checkbox"/>
       <div class="menu">
         <div class="hunburger_menu">
@@ -44,6 +53,15 @@
         </div>
       </div>
     </div>
+    <div class="about_banner content_1200">
+      <div class="row">
+        <div class="col_3_5"><img src="images/about_banner.png"/></div>
+        <div class="col_2_5 p_20">
+          <H1>Mandy Jian</H1>
+          <h5>我是簡曼婷，是一位重視使用者經驗與美感間平衡的設計師，期望可以持續創造帶給人們美好感受的產品。</h5>
+        </div>
+      </div>
+    </div>
     <div class="content_1024">
       <div class="resume">
         <div class="row" id="row_3">
@@ -54,7 +72,7 @@
               <div class="p">晶睿通訊股份有限公司</div>
               <div class="p">2018 - 2019</div>
             </li>
-            <li class="context">於使用者經驗部門擔任使用者經驗設計師，主要負責GUI設計，工作內容包含繪製wireframes、UI  spec、mockups、Icon設計等。我參與過的公司自有品牌軟體專案包含桌上型電腦與手機APP(Android、iOS)、網頁雲端服務、硬體崁入式軟體，與其他UX/UI設計師、PM與工程師跨部門合作開發，學習到如何與不同團隊合作溝通並更精進設計的細節與準確度。</li>
+            <li class="context">於使用者經驗部門擔任使用者經驗設計師，主要負責UI設計，工作內容包含繪製wireframes、UI  spec、mockups、Icon設計等。我參與過的公司自有品牌軟體專案包含桌上型電腦與手機APP(Android、iOS)、網頁雲端服務、硬體崁入式軟體，與其他UX/UI設計師、PM與工程師跨部門合作開發，學習到如何與不同團隊合作溝通並更精進設計的細節與準確度。</li>
             <ul></ul>
             <li class="point_p"> 
               <h3>網頁視覺設計師</h3>
@@ -103,11 +121,30 @@
             </li>
           </ul>
         </div>
-        <hr/><a class="back X_center" href="index.html">UI DESIGN WORKS</a>
       </div>
     </div>
+    <footer class="footer"><a class="link" href="index.html">
+        <div class="text">
+          <h2 class="title_en">UI DESIGN WORKS</h2>
+          <hr class="topic"/>
+        </div></a>
+      <div class="contact">
+        <div class="content">
+          <div class="mail">
+            <div class="icon"><img src="images/logo_icon.svg" alt=""/></div>
+            <div class="text">
+              <h5>GET IN TOUCH</h5>
+              <p>ev217@gmail.com</p>
+            </div>
+          </div>
+          <div class="top" id="go_to_top">
+            <button><img src="images/top.svg" alt="" title="Go to top"/></button>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/pulgins/jquery/jquery-3.3.1.min.js"></script>
     <script src="js/index.js"> </script>
     <script src="js/allpages.js"></script>
-  </body>
-</html>
+  </header>
+</body>

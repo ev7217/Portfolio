@@ -5,23 +5,33 @@ html
 		meta(name="robots" content="noindex")
 		meta(name="googlebot" content="noindex")
 		title About-Mandy Jian
-		link(rel="icon" href="images/favicon.png" type="image/png" sizes="32x32")
-
-		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
+			//- fonts
+		link(rel="stylesheet prefetcht", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
 		link(rel="stylesheet prefetch", href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700") 
+		//- reset css
+		link(rel="stylesheet", href="css/reset.css")
+		//- costom css
 		link(rel="stylesheet", href="css/style.css")
 		link(rel="stylesheet", href="css/about.css")
 
 
-	body
-		.about_banner.content_1440
-			.row
-				.col_1_2
-					img(src='images/about_banner.png')
-				.col_1_2.p_20
-					H1 Mandy Jian
-					h5 我是簡曼婷，可以叫我Mandy，我是一位重視使用者經驗與美感間平衡的介面設計師，偏好簡潔優雅的設計風格，期望可以持續創造帶給人們美好感受的產品。
-		.mobile_nav
+body
+	header.navdiv
+		.content
+			.logo
+				.icon
+					img(src="images/logo.svg", alt="Logo")
+			.navbar
+				.nav
+					ul
+						li.mobile_hidden
+							a(href="index.html") UI DESIGN
+						li.mobile_hidden
+							a(href="other_works.html") OTHER WORKS
+						li.nowli
+							.nowpage ABOUT
+				
+		.mobile_nav.desktop_hidden
 			input#open_menu(type="checkbox")
 			.menu
 				.hunburger_menu
@@ -29,6 +39,7 @@ html
 						li.line1
 						li.line2
 						li.line3
+
 				.mobile_menu
 					ul
 						li 
@@ -43,6 +54,14 @@ html
 						//- li
 						//- 	a(href="resume.html")
 						//- 		h6 RESUME
+
+		.about_banner.content_1200
+			.row
+				.col_3_5
+					img(src='images/about_banner.png')
+				.col_2_5.p_20
+					H1 Mandy Jian
+					h5 我是簡曼婷，是一位重視使用者經驗與美感間平衡的設計師，期望可以持續創造帶給人們美好感受的產品。
 		.content_1024
 			
 			.resume
@@ -54,7 +73,7 @@ html
 							h3 使用者介面設計師
 							.p 晶睿通訊股份有限公司
 							.p 2018 - 2019
-						li.context 於使用者經驗部門擔任使用者經驗設計師，主要負責GUI設計，工作內容包含繪製wireframes、UI  spec、mockups、Icon設計等。我參與過的公司自有品牌軟體專案包含桌上型電腦與手機APP(Android、iOS)、網頁雲端服務、硬體崁入式軟體，與其他UX/UI設計師、PM與工程師跨部門合作開發，學習到如何與不同團隊合作溝通並更精進設計的細節與準確度。
+						li.context 於使用者經驗部門擔任使用者經驗設計師，主要負責UI設計，工作內容包含繪製wireframes、UI  spec、mockups、Icon設計等。我參與過的公司自有品牌軟體專案包含桌上型電腦與手機APP(Android、iOS)、網頁雲端服務、硬體崁入式軟體，與其他UX/UI設計師、PM與工程師跨部門合作開發，學習到如何與不同團隊合作溝通並更精進設計的細節與準確度。
 
 						ul
 						li.point_p 
@@ -116,9 +135,27 @@ html
 							//- 	img(src="https://i.imgur.com/XUpneFa.png", alt="")
 							a.border(href="Portfolio2019.pdf" target="_blank") Download PDF
 				
-				hr
-				a(href="index.html").back.X_center UI DESIGN WORKS
+				//- hr
+				//- a(href="index.html").back.X_center UI DESIGN WORKS
 
+
+		footer.footer
+				a.link(href="index.html")
+					.text
+						h2.title_en UI DESIGN WORKS
+						hr.topic
+				.contact
+					.content
+						.mail
+							.icon
+								img(src="images/logo_icon.svg", alt="")
+							.text
+								h5 GET IN TOUCH
+								p ev217@gmail.com
+							
+						.top#go_to_top
+							button
+								img(src="images/top.svg", alt="" title="Go to top" )
 
 							 
 

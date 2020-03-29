@@ -15,7 +15,7 @@ body {
 
 section.works_3d .iframe_3d {
   background-color: #eee;
-  z-index: 200; }
+  z-index: 0; }
   section.works_3d .iframe_3d #3d {
     -webkit-animation: fade_in 1s 2s 1 both;
     animation: fade_in 1s 2s 1 both; }
