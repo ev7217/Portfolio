@@ -447,7 +447,6 @@ button {
     -ms-user-select: none;
     user-select: none; }
     .navbar ul li {
-      height: 100%;
       margin-left: 0px;
       margin-right: 0px;
       -webkit-transition: 0.1s;
